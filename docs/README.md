@@ -52,6 +52,9 @@ chapter with its own `README.md` and diagrams.
 >
 > 🎬 **[`VIDEO-SCRIPT.md`](VIDEO-SCRIPT.md)** — a timed, copy-paste storyboard for recording the
 > optional 90-second architecture overview video straight from these docs.
+>
+> 🖥️ **[`SLIDES.md`](SLIDES.md)** — a 4-slide presentation deck (Architecture · API Flow · AI/Model
+> Usage · Safety), one diagram + explanation per slide, to display on screen during the video.
 
 ---
 
