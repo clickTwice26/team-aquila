@@ -1,0 +1,23 @@
+# Keep the build context (and image) small and free of non-app material.
+.git
+.github
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.mypy_cache
+.ruff_cache
+*.egg-info
+build
+dist
+contexts/
+docs/
+tests/
+*.env
+judging.env
+.env
+CLAUDE.md
+RUNBOOK.md
+sample_output.json

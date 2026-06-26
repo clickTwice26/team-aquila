@@ -1,0 +1,10 @@
+# Runtime dependencies (pinned major/minor for reproducible judging).
+# The service runs correctly on rules alone; scikit-learn/joblib power the
+# OPTIONAL local fallback classifier and are gracefully skipped if missing.
+fastapi>=0.110,<1.0
+uvicorn[standard]>=0.27,<1.0
+gunicorn>=21.2,<23.0
+pydantic>=2.6,<3.0
+orjson>=3.9,<4.0
+scikit-learn>=1.4,<2.0
+joblib>=1.3,<2.0

@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "queuestorm-investigator"
+version = "1.0.0"
+description = "Evidence-grounded fintech support copilot API (rules-first hybrid)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Team Aquila" }]
+keywords = ["fastapi", "fintech", "support", "nlp", "rules-engine"]
+
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.27",
+    "gunicorn>=21.2",
+    "pydantic>=2.6",
+    "orjson>=3.9",
+    # Optional local fallback classifier (gracefully disabled if absent).
+    "scikit-learn>=1.4",
+    "joblib>=1.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "httpx>=0.27",
+    "ruff>=0.3",
+    "mypy>=1.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/team-aquila/queuestorm-investigator"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"queuestorm.ml.artifacts" = ["*.joblib"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+warn_unused_ignores = true
