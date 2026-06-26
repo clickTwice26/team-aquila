@@ -454,38 +454,53 @@ A code-level scrubber runs on **every** `customer_reply` and `recommended_next_a
 - **LLM = OPTIONAL**, only ever shapes `agent_summary` / `customer_reply` prose (language, tone). Runs behind `asyncio.wait_for` (8–10s) with a **deterministic template fallback** that already produces safe, valid text. If `MODEL_NAME` is unset or the call errors/times out → silently use templates. **The service must return a correct answer with zero LLM calls.**
 - **The safety filter runs LAST, on the final string, regardless of who wrote it.** Even a jailbroken LLM cannot put an unsafe field on the wire.
 
-### Repo / project structure
+### Repo / project structure (AS BUILT — industry-grade `src/` layout)
 
-Keep `contexts/` exactly as-is. Add at repo root:
+Keep `contexts/` exactly as-is. The shipped service uses a layered `src/` package
+(`api` / `core` / `schemas` / `domain` / `ml`). The final decision was **rules + a tiny local
+scikit-learn fallback classifier, NO cloud LLM** — so there is no `llm_client.py`; instead `ml/`
+holds the optional offline classifier.
 
 ```
 team-aquila/
-├── CLAUDE.md                 # this playbook
-├── README.md                 # setup, stack, AI approach, MODELS, safety, limits
-├── RUNBOOK.md                # copy-paste local + Docker bring-up (judges re-deploy)
-├── requirements.txt          # pinned deps (fastapi, uvicorn, pydantic, httpx, ...)
-├── Dockerfile                # slim, <500MB, binds 0.0.0.0:$PORT
-├── .dockerignore             # exclude contexts/, tests/, .git, .venv
-├── .env.example              # NAMES ONLY — no real values
-├── .gitignore                # .env, judging.env, __pycache__, .venv
-├── sample_output.json        # ≥1 response from a public sample case (required deliverable)
-├── app/
-│   ├── main.py               # FastAPI app, /health, /analyze-ticket, error handlers
-│   ├── schemas.py            # Pydantic request/response models + Enums
-│   ├── investigator.py       # rule engine: tx-match, verdict, case_type, severity, routing
-│   ├── safety.py             # safety filter: scrub/validate customer_reply + next_action
-│   ├── llm_client.py         # OPTIONAL Claude/Groq drafting, timeout + fallback
-│   ├── templates.py          # deterministic safe agent_summary/customer_reply builders
-│   └── config.py             # env: PORT, MODEL_NAME, *_API_KEY, LLM_TIMEOUT_SECONDS
-├── tests/
-│   ├── test_samples.py       # asserts all 10 cases → correct enums/ids/verdicts
-│   ├── test_safety.py        # PIN/OTP/refund/injection/3rd-party red-team cases
-│   └── test_contract.py      # 200/400/422/500, ticket_id echo, schema validity
-└── scripts/
-    └── smoke.sh              # curl /health + POST each sample against $BASE_URL
+├── CLAUDE.md                  # this playbook
+├── README.md                  # setup, stack, AI approach, MODELS, safety, limits
+├── RUNBOOK.md                 # copy-paste local + Docker bring-up (judges re-deploy)
+├── pyproject.toml             # packaging (src layout) + ruff/pytest/mypy config
+├── requirements.txt           # pinned runtime deps
+├── requirements-dev.txt       # test/lint deps
+├── Makefile                   # install/dev/train/run/run-prod/test/lint/sample/smoke/docker
+├── .env.example               # NAMES ONLY — no real values
+├── .gitignore / .dockerignore
+├── sample_output.json         # responses for all 10 public cases (required deliverable)
+├── src/queuestorm/            # installable package — entrypoint: queuestorm.main:app
+│   ├── main.py                # app factory: wires routers, middleware, startup
+│   ├── api/
+│   │   ├── routes/health.py   # GET /health (static, dependency-free) + GET /
+│   │   ├── routes/analyze.py  # POST /analyze-ticket: tolerant parse, 400/422/500, no crash
+│   │   ├── errors.py          # controlled, non-sensitive error bodies (orjson)
+│   │   └── middleware.py      # per-request timing header + access logging
+│   ├── core/                  # config.py (env settings) · logging.py
+│   ├── schemas/               # enums.py (SOURCE OF TRUTH StrEnums) · request.py · response.py
+│   ├── domain/                # PURE business logic (zero web/ML deps → unit-tested)
+│   │   ├── normalization.py   #   amounts/language/counterparty (EN·BN·Banglish)
+│   │   ├── classification.py  #   case_type rules + tie-break order
+│   │   ├── matching.py        #   relevant_transaction_id + evidence_verdict
+│   │   ├── routing.py         #   department + severity + human_review
+│   │   ├── templates.py       #   multilingual safe-by-construction replies
+│   │   ├── safety.py          #   deterministic OUTPUT SAFETY FILTER (runs last)
+│   │   ├── parsing.py         #   tolerant request → ParsedTicket
+│   │   └── investigator.py    #   pipeline orchestrator + content-keyed LRU cache
+│   └── ml/                    # OPTIONAL local fallback classifier + artifacts/*.joblib
+├── deploy/                    # Dockerfile (slim, non-root) · docker-compose.yml · gunicorn_conf.py
+├── scripts/                   # train_classifier.py · generate_sample_output.py · smoke.sh
+├── tests/                     # unit/ (logic+safety) + integration/ (samples, API contract) — 71 tests
+└── .github/workflows/ci.yml   # ruff + pytest on 3.11/3.12
 ```
 
-`investigator.py` (logic) and `safety.py` (guardrails) have zero web/LLM dependencies → independently unit-testable and covered before deployment.
+`domain/` (logic) and `domain/safety.py` (guardrails) have **zero web/ML dependencies** → independently
+unit-testable and covered before deployment. Verified: **71 tests pass · 10/10 samples match · ~2,800
+req/s, p95 ≈ 20 ms**.
 
 ### Endpoint implementation notes
 
