@@ -1,21 +1,71 @@
-# QueueStorm Investigator
+<div align="center">
 
-> **Team Aquila** — Shagato & Munia
-> bKash presents **SUST CSE Carnival 2026 · Codex Community Hackathon** — Online Preliminary (AI/API SupportOps Challenge for Digital Finance)
+# 🛰️ QueueStorm Investigator
 
-An evidence-grounded **support copilot API** for a digital-finance platform. It reads a single customer
-complaint **plus a snippet of that customer's recent transaction history**, decides **what actually
-happened**, routes the case to the right team, and drafts a **safe** customer reply — one that never asks
-for credentials and never promises a refund it cannot authorize.
+**An evidence-grounded support-copilot API for digital finance.**
+
+Reads one customer complaint **plus a snippet of recent transaction history**, decides **what actually
+happened**, routes the case to the right team, and drafts a **safe** customer reply.
+
+<br/>
+
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-async-009688?logo=fastapi&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-v2-E92063?logo=pydantic&logoColor=white)
+![Tests](https://img.shields.io/badge/tests-92%20passing-brightgreen)
+![Samples](https://img.shields.io/badge/public%20samples-10%2F10-brightgreen)
+![Cost](https://img.shields.io/badge/judged%20path-no%20LLM%20%C2%B7%20%240-7C3AED)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
+<sub>Team Aquila — Shagato & Munia · bKash presents **SUST CSE Carnival 2026 · Codex Community Hackathon**<br/>
+Online Preliminary — AI/API SupportOps Challenge for Digital Finance</sub>
+
+</div>
+
+---
 
 It is a **complaint _investigator_, not a complaint classifier**: the complaint says one thing, the
 transaction data may say another, and the service decides what is true. When the evidence is genuinely
 unclear, it says so (`insufficient_data`) instead of guessing.
 
+```text
+POST /analyze-ticket   →  structured JSON verdict  (classify · investigate · route · safe reply)
+GET  /health           →  {"status": "ok"}
 ```
-POST /analyze-ticket   →  structured JSON verdict (classify · investigate · route · safe reply)
-GET  /health           →  {"status":"ok"}
-```
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Highlights](#highlights)
+- [Documentation](#documentation)
+- [Architecture](#architecture)
+- [Quick Start](#quick-start)
+- [API Reference](#api-reference)
+- [How It Works](#how-it-works)
+- [Performance and Reliability](#performance-and-reliability)
+- [Testing](#testing)
+- [Assumptions and Limitations](#assumptions-and-limitations)
+- [License](#license)
+
+---
+
+## Overview
+
+Fintech support teams drown in tickets, and every ticket hides a question of fact. A customer writes
+*"I sent 5000 taka to the wrong number, please reverse it!"* — but is it really a wrong transfer? Maybe
+they have sent money to that exact number three times before. Maybe the transaction never happened. Maybe
+it is a scammer fishing for an OTP.
+
+QueueStorm Investigator automates that judgement into **one API call**. It cross-checks the complaint
+against the transaction history, classifies and routes the case, and writes a reply that **never asks for
+credentials and never promises a refund it cannot authorize** — or honestly returns `insufficient_data`
+when the evidence does not support a confident answer.
+
+> **Design philosophy:** *"A simple, reliable, safe API will score higher than a complex but unreliable
+> one."* Every scored decision is made by deterministic code; the optional model is polish, never the
+> source of truth.
 
 ---
 
@@ -30,14 +80,15 @@ GET  /health           →  {"status":"ok"}
 - **Optional tiny local fallback classifier** (scikit-learn TF-IDF + Logistic Regression, ~82 KB, CPU,
   offline) assists `case_type` **only** when the rules are not confident. Gracefully disabled if absent.
 - **Multilingual** (English / Bangla / Banglish) — replies mirror the complaint's language.
-- **Scalable & reliable**: stateless, async FastAPI + gunicorn multi-worker, in-process LRU cache,
-  tolerant input parsing (never crashes), benchmarked at **~2,800 req/s** (p50 ≈ 11 ms, p95 ≈ 20 ms) on a
-  4-worker laptop — far inside the 30 s timeout / 5 s p95 targets.
-- **10/10 public sample cases** match the expected output on all six scored fields; **92 tests** pass.
+- **Scalable and reliable** — stateless, async FastAPI + gunicorn multi-worker, in-process LRU cache,
+  tolerant input parsing (never crashes); benchmarked at **~2,800 req/s** (p50 ≈ 11 ms, p95 ≈ 20 ms) on a
+  4-worker laptop, far inside the 30 s timeout / 5 s p95 targets.
+- **Validated** — 10/10 public sample cases match the expected output on all six scored fields; **92
+  automated tests** pass.
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 Full architecture documentation — **14 chapters with 40+ Mermaid diagrams** (use-case, component,
 sequence, activity) — lives in **[`docs/`](docs/README.md)**. Start there for the complete walkthrough;
@@ -66,7 +117,13 @@ every chapter traces its claims to the code and is verified against it.
 
 ---
 
-## Tech stack
+## Architecture
+
+A **rules-first hybrid**: a thin async HTTP shell wraps a pure, deterministic domain core. Web concerns
+live at the edge; business logic (`domain/`) has **zero web and zero ML dependencies**, so it is fast,
+reproducible, and independently unit-testable. → Full detail in [Chapter 02](docs/02-architecture/README.md).
+
+### Tech stack
 
 | Layer | Choice |
 |---|---|
@@ -78,11 +135,9 @@ every chapter traces its claims to the code and is verified against it.
 | Optional ML | scikit-learn + joblib (tiny local fallback classifier) |
 | Tests / tooling | pytest · ruff · mypy · GitHub Actions CI |
 
----
+### Project structure
 
-## Project structure
-
-```
+```text
 src/queuestorm/            # installable package (src layout)
 ├── main.py                # app factory + ASGI entrypoint (queuestorm.main:app)
 ├── api/                   # HTTP layer
@@ -110,10 +165,12 @@ contexts/                  # hackathon reference docs (not part of the app)
 
 ---
 
-## Quick start
+## Quick Start
+
+### Local (Python 3.11+)
 
 ```bash
-# 1) Install (Python 3.11+)
+# 1) Install
 python -m pip install -r requirements.txt
 python -m pip install -e .
 
@@ -122,7 +179,7 @@ python -m pip install -e .
 python scripts/train_classifier.py
 
 # 3) Run
-uvicorn queuestorm.main:app --host 0.0.0.0 --port 8000        # dev
+uvicorn queuestorm.main:app --host 0.0.0.0 --port 8000        # dev (single worker)
 gunicorn -c deploy/gunicorn_conf.py queuestorm.main:app       # prod (multi-worker)
 
 # 4) Verify
@@ -141,13 +198,29 @@ docker run -p 8000:8000 queuestorm-investigator:latest
 # or: docker compose -f deploy/docker-compose.yml up --build
 ```
 
+The image is `python:3.11-slim`, runs as a non-root user, binds `0.0.0.0:8000`, trains the ~82 KB model
+at build time, ships **no secrets**, and performs **no runtime downloads**. See
+[`RUNBOOK.md`](RUNBOOK.md) and [Chapter 12](docs/12-deployment/README.md).
+
 ---
 
-## API
+## API Reference
+
+The judge harness exercises exactly two endpoints.
+
+### `GET /health`
+
+Static, dependency-free — ready well within the 60 s window even on a cold start.
+
+```http
+GET /health  →  200  {"status": "ok"}
+```
 
 ### `POST /analyze-ticket`
 
-Request (only `ticket_id` and `complaint` are required):
+Only `ticket_id` and `complaint` are required; everything else is optional and tolerated.
+
+**Request**
 
 ```json
 {
@@ -162,7 +235,7 @@ Request (only `ticket_id` and `complaint` are required):
 }
 ```
 
-Response:
+**Response**
 
 ```json
 {
@@ -181,38 +254,63 @@ Response:
 }
 ```
 
-**Status codes:** `200` success · `400` malformed JSON / missing `ticket_id`|`complaint` · `422` empty
-complaint · `500` internal error (non-sensitive body, `ticket_id` echoed). The service **never crashes**
-on malformed input. See [sample_output.json](sample_output.json) for all 10 public cases.
+### Status codes
+
+| Code | Meaning |
+|---|---|
+| `200` | Successful analysis; body conforms to the response schema |
+| `400` | Malformed JSON, or missing `ticket_id` / `complaint` |
+| `422` | Schema-valid but empty/whitespace-only `complaint` |
+| `500` | Internal error — non-sensitive body, `ticket_id` echoed, never a stack trace |
+
+The service **never crashes** on malformed input. See [`sample_output.json`](sample_output.json) for the
+responses to all 10 public cases, and [Chapter 03](docs/03-api-contract/README.md) for the full contract.
 
 ---
 
-## AI approach & reasoning logic
+## How It Works
 
-The service is a **deterministic state machine**, computed in this order:
+### Reasoning pipeline (AI approach)
 
-1. **Normalize** — extract amounts (ignoring phone numbers/times, handling Bangla digits & commas),
+The service is a **deterministic state machine**, computed in this exact order
+([Chapter 04](docs/04-investigation-pipeline/README.md)):
+
+1. **Normalize** — extract amounts (ignoring phone numbers/times, handling Bangla digits and commas),
    detect language, surface counterparty hints and status cues.
 2. **Classify `case_type`** from the complaint via prioritized keyword rules (EN + Bangla), with a
    **safety-first tie-break** (`phishing` > `duplicate_payment` > `wrong_transfer` > …). If the rules are
    low-confidence, the **optional local ML fallback** may assist — but it can never flip a confident
    phishing/safety label.
-3. **Match `relevant_transaction_id`** by amount (strongest), type, status and counterparty signals.
+3. **Match `relevant_transaction_id`** by amount (strongest), type, status, and counterparty signals.
    When several transactions plausibly match and nothing disambiguates → **`null`** (don't guess). For
    duplicates, the **second/later** transaction is selected.
-4. **Judge `evidence_verdict`** — `consistent` (data corroborates), `inconsistent` (data contradicts, e.g.
-   an established-recipient pattern behind a "wrong transfer" claim), or `insufficient_data`.
+4. **Judge `evidence_verdict`** — `consistent` (data corroborates), `inconsistent` (data contradicts,
+   e.g. an established-recipient pattern behind a "wrong transfer" claim), or `insufficient_data`.
 5. **Route `department`**, **set `severity`**, **set `human_review_required`** — pure functions of the
    decided fields (`user_type` confirms merchant/agent routes).
 6. **Draft text** (mirroring complaint language) → **enforce safety** as the final, independent gate.
 
----
+### Models
 
-## Safety logic
+The QueueStorm Investigator is **rules-first**. All scored decisions and **every safety guardrail** are
+made by a deterministic rule engine — no model is required for correctness.
 
-Fintech safety is a hard requirement; violations carry direct score penalties. The
-[safety filter](src/queuestorm/domain/safety.py) runs on **every** `customer_reply` and
-`recommended_next_action` before they leave the service:
+| Model | Role | Where it runs | Fallback |
+|---|---|---|---|
+| **Deterministic rule engine** (in-house, Python) | Source of truth: tx match, evidence verdict, classification, routing, severity, escalation, **safety filter** | In-process (no GPU, no weights, no network) | N/A — always available |
+| **Local fallback classifier** (scikit-learn TF-IDF + Logistic Regression, ~82 KB) | OPTIONAL: assists `case_type` only when rule confidence is low | In-process, CPU, offline | Rules-only (auto-disabled if scikit-learn / artifact absent) |
+| **Cloud LLM** | **Not used** in the judged path | — | — |
+
+**Cost and availability:** **$0** — no third-party API keys, no metered calls, no model downloads at
+runtime. The fallback model is trained offline (`scripts/train_classifier.py`) and ships as ~82 KB of
+package data. Runs comfortably within 2 vCPU / 4 GB. Because every scored decision and the safety filter
+are deterministic, an LLM outage, quota limit, or jailbreak attempt **cannot** affect correctness or
+safety.
+
+### Safety logic
+
+The [safety filter](src/queuestorm/domain/safety.py) runs on **every** `customer_reply` and
+`recommended_next_action` before they leave the service ([Chapter 09](docs/09-safety-system/README.md)):
 
 | Rule | Guarantee |
 |---|---|
@@ -222,35 +320,20 @@ Fintech safety is a hard requirement; violations carry direct score penalties. T
 | **Prompt-injection resistant** | The complaint is treated as untrusted **data**, never instructions; embedded commands and leaked secrets are stripped. |
 | **Credential reminder** | Appended in the complaint's language (English or Bangla) unless already present. |
 
-Because every scored decision and the safety filter are deterministic, an LLM outage, quota limit, or
-jailbreak attempt **cannot** affect correctness or safety.
-
-## MODELS
-
-The QueueStorm Investigator is **rules-first**. All scored decisions (transaction matching,
-`evidence_verdict`, `case_type`, `severity`, `department`, `human_review_required`) and **every safety
-guardrail** are made by a deterministic rule engine — no model is required for correctness.
-
-| Model | Role | Where it runs | Why chosen | Fallback |
-|-------|------|---------------|------------|----------|
-| **Deterministic rule engine** (in-house, Python) | Source of truth: tx match, evidence verdict, classification, routing, severity, escalation, **safety filter** | In-process (no GPU, no weights, no network) | Fast (~1–5 ms), reproducible, zero quota/cost/injection risk | N/A — always available |
-| **Local fallback classifier** (scikit-learn TF-IDF + Logistic Regression, ~82 KB) | OPTIONAL: assists `case_type` only when rule confidence is low | In-process, CPU, offline | Tiny, deterministic, sub-ms; robustness hedge for unusual phrasings | Rules-only (auto-disabled if scikit-learn/artifact absent) |
-| **Cloud LLM** | **Not used** in the judged path | — | Adds latency, quota, availability and safety risk for **zero** gain on the auto-scored fields | — |
-
-**Cost & availability:** **$0** — no third-party API keys, no metered calls, no model downloads at
-runtime. The fallback model is trained offline (`scripts/train_classifier.py`) and ships as ~82 KB of
-package data. Runs comfortably within 2 vCPU / 4 GB.
-
 ---
 
-## Performance & scalability
+## Performance and Reliability
 
 - **Stateless** → scales horizontally; run N gunicorn workers (`WEB_CONCURRENCY`, defaults to CPU count).
 - **In-process LRU cache** keyed on request *content* (not `ticket_id`) serves retried/identical tickets
   from memory; the echoed `ticket_id` always reflects the current request.
 - **`/health` is static and dependency-free** → ready well within the 60 s window even on a cold start;
   the optional model loads lazily and never blocks readiness.
-- Benchmark (4 workers, laptop): **~2,800 req/s**, p50 ≈ 11 ms, p95 ≈ 20 ms.
+- **Never-crash handling** — tolerant parsing plus a top-level guard turn any unexpected error into a
+  controlled response; the process never exits.
+- **Benchmark** (4 workers, laptop): **~2,800 req/s**, p50 ≈ 11 ms, p95 ≈ 20 ms.
+
+→ See [Chapter 11](docs/11-reliability-and-performance/README.md).
 
 ---
 
@@ -261,9 +344,14 @@ python -m pytest          # 92 tests: 10 sample cases, safety red-team, API cont
 ruff check src tests scripts
 ```
 
+Test suites cover normalization, classification, matching/routing, the safety red-team, the API contract,
+sample functional-equivalence, and a 292-case multilingual corpus. CI
+([`.github/workflows/ci.yml`](.github/workflows/ci.yml)) runs ruff + pytest on Python 3.11/3.12 on every
+push. → See [Chapter 13](docs/13-testing-and-validation/README.md).
+
 ---
 
-## Assumptions & known limitations
+## Assumptions and Limitations
 
 - **Synthetic data only** — no real customer data, no live payment integration, no production-scale deploy.
 - `case_type` rules are keyword-driven; very unusual phrasings rely on the tiny fallback classifier, which
@@ -279,4 +367,6 @@ ruff check src tests scripts
 
 ## License
 
-MIT
+Released under the [MIT License](LICENSE).
+
+<div align="center"><sub>Built by <b>Team Aquila</b> — Shagato & Munia · SUST CSE Carnival 2026</sub></div>
