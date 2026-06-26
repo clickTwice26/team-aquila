@@ -17,9 +17,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "src"))
 
 from queuestorm.domain.classification import classify_rules  # noqa: E402
+from queuestorm.domain.investigator import _final_classification  # noqa: E402
 from queuestorm.domain.normalization import build_signals  # noqa: E402
 
 LANGS = ["en", "bn", "mixed"]
+USE_ML = "--rules-only" not in sys.argv
 
 
 def main(path: str) -> int:
@@ -34,7 +36,8 @@ def main(path: str) -> int:
     misses = []
     for c in cases:
         text, lang, exp = c["complaint"], c.get("language", "en"), c["expected_case_type"]
-        got = classify_rules(build_signals(text, lang)).case_type.value
+        signals = build_signals(text, lang)
+        got = (_final_classification(signals) if USE_ML else classify_rules(signals)).case_type.value
         tot[lang] += 1
         by_type_tot[exp] += 1
         if got == exp:
@@ -57,7 +60,7 @@ def main(path: str) -> int:
     if misses:
         print(f"\n=== {len(misses)} misses ===")
         conf = defaultdict(int)
-        for lang, exp, got, _ in misses:
+        for _lang, exp, got, _ in misses:
             conf[(exp, got)] += 1
         print("confusion (expected -> got : count):")
         for (exp, got), cnt in sorted(conf.items(), key=lambda x: -x[1]):
