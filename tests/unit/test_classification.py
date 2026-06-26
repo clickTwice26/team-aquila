@@ -42,3 +42,34 @@ def test_unclassified_is_low_confidence():
     c = classify_rules(build_signals("hello"))
     assert c.case_type == CaseType.other
     assert c.confidence < 0.6
+
+
+# --- Multilingual: Bangla script + romanized Banglish must classify too. ---
+@pytest.mark.parametrize("text,lang,expected", [
+    # Bangla script
+    ("ভুল নম্বরে টাকা পাঠিয়ে ফেলেছি ফেরত চাই", "bn", CaseType.wrong_transfer),
+    ("পেমেন্ট ফেইল হয়েছে কিন্তু টাকা কেটে নিয়েছে", "bn", CaseType.payment_failed),
+    ("একই বিল দুইবার কেটেছে", "bn", CaseType.duplicate_payment),
+    ("রিফান্ড চাই পণ্য লাগবে না", "bn", CaseType.refund_request),
+    ("এজেন্টের কাছে ক্যাশ ইন করেছি কিন্তু ব্যালেন্সে আসেনি", "bn", CaseType.agent_cash_in_issue),
+    ("আমার বিক্রির টাকা সেটেল হয়নি", "bn", CaseType.merchant_settlement_delay),
+    ("কেউ ফোন দিয়ে আমার ওটিপি চাইছে", "bn", CaseType.phishing_or_social_engineering),
+    # Romanized Banglish (the previously-failing bucket)
+    ("vul number e taka pathaisi ferot chai", "mixed", CaseType.wrong_transfer),
+    ("bhul manush ke taka pathaye disi", "mixed", CaseType.wrong_transfer),
+    ("payment fail holo kintu taka kete nilo", "mixed", CaseType.payment_failed),
+    ("bill dite gie fail hoise but balance kome gese", "mixed", CaseType.payment_failed),
+    ("ek bill dui bar kete nise", "mixed", CaseType.duplicate_payment),
+    ("ami refund chai product lagbe na", "mixed", CaseType.refund_request),
+    ("agent er kache cash in korsi but balance e ase nai", "mixed", CaseType.agent_cash_in_issue),
+    ("amar merchant settlement ase nai", "mixed", CaseType.merchant_settlement_delay),
+    ("keu amar otp chasche bole account block hobe", "mixed", CaseType.phishing_or_social_engineering),
+])
+def test_multilingual_classification(text, lang, expected):
+    assert classify_rules(build_signals(text, lang)).case_type == expected
+
+
+def test_merchant_keyword_does_not_hijack_refund():
+    # SAMPLE-04 style: a refund that merely mentions "merchant" must stay refund.
+    text = "I paid 500 to a merchant for a product but changed my mind, refund please"
+    assert classify_rules(build_signals(text)).case_type == CaseType.refund_request

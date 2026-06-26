@@ -1,0 +1,1468 @@
+{
+  "_meta": {
+    "purpose": "multilingual case_type verification set (generated)",
+    "count": 292
+  },
+  "cases": [
+    {
+      "complaint": "I accidentally sent 3,500 BDT to the wrong number. I typed 01712345678 instead of 01712345687 and the Send Money went through to a stranger. How can I get my money back?",
+      "language": "en",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "Sent money to the wrong recipient by mistake. Meant to pay my brother but the last digit was off and 2000 taka went to someone I don't know. Please help me reverse it.",
+      "language": "en",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "I did a Send Money of 5000 tk to my friend's bKash number but he says nothing came into his account. The amount was deducted from me. I think it went to the wrong number.",
+      "language": "en",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "While sending rent money I selected the wrong contact from my saved list and 8,000 BDT went to my old landlord's number instead of the new one. Need to recover it urgently.",
+      "language": "en",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "Hi, I transferred 1,200 taka to 01987654321 but I mistyped one digit. The receiver is a complete stranger. Can you help me get a refund of the wrongly sent amount?",
+      "language": "en",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "My money got deducted for a Send Money but it reached the wrong person. I was supposed to send 4500 to my mother and instead it went to a number that isn't hers.",
+      "language": "en",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "I sent 600 BDT to my colleague but he never received it. After checking I realized I sent it to a wrong number that ends in 09 instead of 90. What do I do now?",
+      "language": "en",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "Last night I tried to pay back a loan and sent 10,000 taka, but I picked the wrong saved number and it went to the wrong account. The intended person didn't get anything.",
+      "language": "en",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "Please help. I made a Send Money of 750 tk but autocomplete filled the wrong number and the cash went to someone else. The person I wanted to pay says he got no money.",
+      "language": "en",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "I sent 2,300 BDT to the wrong bKash number due to a typo. Money left my balance but the actual recipient never received it. Is there any way to cancel and get it back?",
+      "language": "en",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "Transferred money to an unknown number by accident. I confused two contacts named Rahim in my phone and 3000 taka went to the wrong Rahim. Need assistance reversing this.",
+      "language": "en",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "I meant to send 1500 to my sister but accidentally added an extra digit and it went to a totally different number. She didn't receive the money and now it's stuck with a stranger.",
+      "language": "en",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "আমি ভুল নম্বরে ৩০০০ টাকা পাঠিয়েছি। আসলে আমার ভাইকে পাঠানোর কথা ছিল কিন্তু এক ডিজিট ভুল হয়ে অন্য একজনের নম্বরে চলে গেছে। টাকাটা ফেরত পাওয়ার উপায় কী?",
+      "language": "bn",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "সেন্ড মানি করতে গিয়ে ভুল কন্টাক্ট সিলেক্ট হয়ে গেছে, ফলে ৫০০০ টাকা ভুল লোকের কাছে চলে গেছে। যাকে পাঠানোর কথা ছিল সে কিছুই পায়নি। দয়া করে সাহায্য করুন।",
+      "language": "bn",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "আমার মা কে ২৫০০ টাকা পাঠিয়েছিলাম কিন্তু উনি বলছেন টাকা পাননি। পরে দেখি নম্বরের শেষ ডিজিট ভুল ছিল, টাকা অন্য একটা নম্বরে গেছে।",
+      "language": "bn",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "ভুল করে ০১৭১২৩৪৫৬৭৮ এর জায়গায় ০১৭১২৩৪৫৬৮৭ নম্বরে ৮০০ টাকা সেন্ড মানি করে ফেলেছি। লোকটা অপরিচিত। টাকা কীভাবে ফেরত পাবো?",
+      "language": "bn",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "বন্ধুকে ৪০০০ টাকা পাঠাতে গিয়ে সেভ করা নম্বর গুলিয়ে ফেলেছি, টাকা অন্য একজনের অ্যাকাউন্টে চলে গেছে। সঠিক ব্যক্তি কোনো টাকা পায়নি। এটা রিভার্স করা যাবে?",
+      "language": "bn",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "গতকাল রাতে দোকানের পেমেন্ট না দিয়ে ভুলে ব্যক্তিগত নম্বরে ১৫০০ টাকা চলে গেছে। নম্বরটা চিনি না। আমার ব্যালেন্স থেকে কেটে গেছে কিন্তু ভুল জায়গায় গেছে।",
+      "language": "bn",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "আমি ১২০০ টাকা সেন্ড মানি করেছি কিন্তু রিসিভার বলছে টাকা ঢোকেনি। চেক করে দেখলাম এক ডিজিট ভুল টাইপ করেছিলাম, তাই ভুল নম্বরে চলে গেছে।",
+      "language": "bn",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "ভাড়ার টাকা পাঠাতে গিয়ে পুরনো বাড়িওয়ালার নম্বরে ভুল করে ৭০০০ টাকা পাঠিয়ে ফেলেছি। নতুন বাড়িওয়ালা টাকা পাননি। দ্রুত ফেরত দরকার।",
+      "language": "bn",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "টাইপ করার সময় নম্বর ভুল হয়ে গেছে, ফলে ৬৫০ টাকা অপরিচিত একটা নম্বরে চলে গেছে। আমি যাকে পাঠাতে চেয়েছিলাম সে কিছু পায়নি। কী করবো?",
+      "language": "bn",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "আমার ফোনে দুইজন রহিম সেভ করা ছিল, ভুল রহিমের নম্বরে ৩৫০০ টাকা সেন্ড মানি হয়ে গেছে। ভুল লোকের কাছে টাকা আটকে আছে, রিভার্স করতে চাই।",
+      "language": "bn",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "বোনকে ১৮০০ টাকা পাঠানোর কথা ছিল কিন্তু একটা বাড়তি ডিজিট পড়ে গিয়ে একদম অন্য নম্বরে চলে গেছে। সে টাকা পায়নি, এখন অচেনা লোকের কাছে আটকে আছে।",
+      "language": "bn",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "ঋণ শোধ করতে গিয়ে ১০০০০ টাকা পাঠিয়েছিলাম, কিন্তু ভুল সেভ করা নম্বর সিলেক্ট হয়ে অন্য অ্যাকাউন্টে চলে গেছে। যাকে দেওয়ার কথা সে কিছুই পায়নি।",
+      "language": "bn",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "ami vul number e 3000 taka send money korsi. amar vai ke pathanor kotha chilo kintu ek digit vul hoye onno ekjon er kase chole gese. taka ki ferot pabo?",
+      "language": "mixed",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "bhul kore contact select hoye gese, 5000 tk onno lok er number e chole gese. jake pathanor kotha chilo se kichui pay nai. help koren plz.",
+      "language": "mixed",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "ma ke 2500 taka pathaisilam but uni boltese taka pai nai. pore dekhi number er last digit vul chilo, taka onno karo kase chole gese.",
+      "language": "mixed",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "vul kore 01712345678 er jaygay 01712345687 e 800 taka send money kore felsi. lokta ke chini na. taka kivabe ferat pabo?",
+      "language": "mixed",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "bondhu ke 4000 pathate giye save kora number guliye felsi, taka onno ekjon er account e chole gese. shothik manush kono taka pay nai. eta reverse kora jabe?",
+      "language": "mixed",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "kal rate dokaner payment na diye bhul kore personal number e 1500 taka chole gese. number ta chini na. amar balance theke kete nise kintu vul jaygay gese.",
+      "language": "mixed",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "ami 1200 taka send money korsi kintu receiver bolse taka dhoke nai. check kore dekhlam ek digit vul type korsilam, tai bhul number e gese.",
+      "language": "mixed",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "barir vara pathate giye puran bariwala r number e bhul kore 7000 taka pathaisi. notun bariwala taka pay nai. taratari ferot dorkar.",
+      "language": "mixed",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "type korar somoy number vul hoye gese, 650 taka ekta ochena number e chole gese. ami jake pathate chaisilam se kichu pay nai. ekhon ki korbo?",
+      "language": "mixed",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "amar phone e dui jon Karim save chilo, vul Karim er number e 3500 taka send money hoye gese. vul lok er kase taka atke ase, reverse korte chai.",
+      "language": "mixed",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "bon ke 1800 pathanor kotha chilo but ekta extra digit pore giye purai onno number e gese. she taka pay nai, ekhon ochena lok er kase atke.",
+      "language": "mixed",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "vai ke taka pathaite giye autofill onno number boshaye dilo, 2200 taka bhul jaygay chole gelo. jake pathanor kotha chilo tar kase taka jay nai, kibhabe cancel korbo?",
+      "language": "mixed",
+      "expected_case_type": "wrong_transfer"
+    },
+    {
+      "complaint": "I tried to pay my DESCO electricity bill of 1,250 taka through bKash. The app showed 'Transaction Failed' but the money was already cut from my balance. The bill is still unpaid on my account.",
+      "language": "en",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "Recharged 200 taka to my GP number but the recharge failed. No flexiload came to my phone, yet 200 was deducted from my bKash. Please return it.",
+      "language": "en",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "Made a merchant payment of 3,400 at Shwapno using the QR code. It said payment unsuccessful so I paid again by card, but bKash still took the 3,400. So now I've been charged twice basically because the first one failed but money went.",
+      "language": "en",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "My internet bill payment to Link3 failed midway. Screen froze and then showed error, but I got an SMS that 800 taka was deducted. Bill not paid, money gone.",
+      "language": "en",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "Was paying 1,599 for my Daraz order and the transaction failed. Daraz says they received nothing but my bKash balance dropped by exactly 1,599. Where did the money go?",
+      "language": "en",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "Tried to recharge 50 taka talktime, got 'Sorry, your transaction could not be completed' but the 50 was already gone from my account. This is the second time today.",
+      "language": "en",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "I was paying my son's school fee, amount 4,500, through the bKash payment option. The payment failed but the deduction happened. School portal shows due, bKash shows it taken out.",
+      "language": "en",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "Network issue during a bus ticket payment of 950 taka on Shohoz. It failed and no ticket was issued, but the amount was debited from my bKash wallet. Need this reversed.",
+      "language": "en",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "Paid my Robi postpaid bill 1,100, the screen showed transaction failed twice but checked my balance and 1,100 is missing. Bill still showing unpaid. Please look into the failed payment.",
+      "language": "en",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "Tried to do a payment of 2,250 at a restaurant, the merchant said it didn't go through on their machine, but I received a confirmation SMS that money was deducted from my bKash. So the payment failed on their side but I lost the money.",
+      "language": "en",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "My WASA water bill payment of 670 taka failed but balance deducted. App says 'transaction unsuccessful' yet the 670 is cut. The biller did not receive it.",
+      "language": "en",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "Tried recharging 300 taka to my Banglalink number through bKash, got an error saying recharge failed. The recharge never reached my SIM but the taka was deducted from my bKash. Want a refund of the failed recharge.",
+      "language": "en",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "আমি বিকাশ দিয়ে ডেসকোর বিল ১,৩৫০ টাকা পরিশোধ করতে গিয়েছিলাম। স্ক্রিনে 'লেনদেন ব্যর্থ' দেখাল কিন্তু টাকা ঠিকই কেটে নিল। বিল এখনও বকেয়া দেখাচ্ছে।",
+      "language": "bn",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "গ্রামীণফোনে ১০০ টাকা রিচার্জ করতে গেলাম, রিচার্জ ফেইল হয়ে গেল। মোবাইলে কোনো ব্যালেন্স আসেনি অথচ বিকাশ থেকে ১০০ টাকা কেটে গেছে। টাকাটা ফেরত চাই।",
+      "language": "bn",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "স্বপ্ন সুপারশপে কিউআর কোড দিয়ে ২,৮০০ টাকা পেমেন্ট করতে গিয়ে ব্যর্থ হলো, কিন্তু আমার বিকাশ ব্যালেন্স থেকে ২,৮০০ টাকা কেটে নিয়েছে। দোকান বলছে তারা পায়নি।",
+      "language": "bn",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "আমার ইন্টারনেট বিল ৯০০ টাকা পরিশোধের সময় লেনদেন ফেইল হয়ে যায়। বিল পরিশোধ হয়নি কিন্তু টাকা কেটে নিয়েছে। এসএমএসে দেখলাম ৯০০ টাকা ডেবিট হয়েছে।",
+      "language": "bn",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "দারাজে ১,৭৫০ টাকার অর্ডারের পেমেন্ট করতে গিয়ে ট্রানজেকশন ব্যর্থ হলো। দারাজ বলছে পেমেন্ট আসেনি কিন্তু আমার বিকাশ থেকে ১,৭৫০ টাকা চলে গেছে। কোথায় গেল টাকা?",
+      "language": "bn",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "৫০ টাকার টকটাইম রিচার্জ দিতে গেলাম, লেখা এল 'দুঃখিত, আপনার লেনদেন সম্পন্ন হয়নি'। কিন্তু ৫০ টাকা ঠিকই অ্যাকাউন্ট থেকে কেটে গেছে। আজকে দ্বিতীয়বার এমন হলো।",
+      "language": "bn",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "ছেলের স্কুলের বেতন ৫,০০০ টাকা বিকাশে পেমেন্ট করছিলাম। পেমেন্ট ফেইল দেখাল অথচ টাকা কেটে নিল। স্কুলের পোর্টালে এখনও বকেয়া দেখাচ্ছে।",
+      "language": "bn",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "সোহোজে ৮৫০ টাকার বাসের টিকিট কাটার সময় নেটওয়ার্ক সমস্যা হয়, পেমেন্ট ব্যর্থ হয়ে যায় এবং টিকিট পাইনি। কিন্তু বিকাশ ওয়ালেট থেকে ৮৫০ টাকা কেটে নিয়েছে। ফেরত দিন।",
+      "language": "bn",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "রবি পোস্টপেইড বিল ১,২০০ টাকা পরিশোধ করতে গেলাম, দুইবার লেনদেন ব্যর্থ দেখাল কিন্তু ব্যালেন্স চেক করে দেখি ১,২০০ টাকা নেই। বিল এখনও অপরিশোধিত।",
+      "language": "bn",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "একটা রেস্টুরেন্টে ২,১০০ টাকা পেমেন্ট দিতে গিয়ে দোকানের মেশিনে ফেইল দেখাল, কিন্তু আমার বিকাশ থেকে টাকা কেটে কনফার্মেশন এসএমএস এসেছে। মানে পেমেন্ট ফেইল কিন্তু টাকা গায়েব।",
+      "language": "bn",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "ওয়াসার পানির বিল ৭৫০ টাকা পরিশোধ ব্যর্থ হলো কিন্তু টাকা কেটে নিল। অ্যাপে 'লেনদেন অসফল' লেখা অথচ ৭৫০ টাকা কাটা। বিল গ্রহীতা টাকা পায়নি।",
+      "language": "bn",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "বাংলালিংক নম্বরে ৩০০ টাকা রিচার্জ দিতে গিয়ে এরর এল, রিচার্জ ব্যর্থ। সিমে রিচার্জ আসেনি অথচ বিকাশ থেকে টাকা কেটে নিয়েছে। ব্যর্থ রিচার্জের টাকা ফেরত চাই।",
+      "language": "bn",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "ami bikash diye desco bill 1250 taka dite gesilam, screen e 'transaction failed' aslo kintu taka kete nilo. Bill ekhono baki dekhasse, taka o gelo.",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "GP te 200 taka recharge dilam kintu recharge fail hoye gelo. Phone e kono balance ase nai othocho bikash theke 200 taka katlo. Plz ferot din.",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "shwapno te qr code diye 3000 taka payment dite giye fail holo, kintu amar bikash theke 3000 kete nise. Dokan bolse tara paye nai, payment fail kintu taka gayeb.",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "net bill 850 taka dewar somoy transaction fail hoye gelo. Bill pay hoy nai kintu taka kete nilo. SMS e dekhlam 850 debit hoise. eta kemne holo?",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "daraz e 1599 takar order er payment korte giye transaction fail. Daraz bole tara kisu pay nai othocho amar bikash balance theke exactly 1599 kome gese. Taka kothay gelo bujhtesi na.",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "50 takar talktime recharge dite gelam, lekha aslo 'sorry transaction could not be completed', kintu 50 taka account theke age e chole gese. Ajke 2 bar emon holo.",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "cheler school fee 4500 taka bikash e payment dicchilam. Payment fail dekhalo othocho taka kete nilo. School portal e baki dekhay, bikash e kata.",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "shohoz e 950 takar bus ticket katar somoy network problem, payment fail r ticket o pai nai. Kintu bikash wallet theke 950 kete niche. Eta reverse kore din plz.",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "robi postpaid bill 1100 dite gelam, dui bar transaction failed dekhalo kintu balance check kore dekhi 1100 nai. Bill ekhono unpaid. Fail payment er bepare dekhen.",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "restaurant e 2250 taka payment dite giye dokaner machine e fail dekhalo, kintu amar bikash theke taka kete confirmation sms aslo. Mane payment fail kintu ami taka harailam.",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "wasa pani bill 670 taka payment fail holo kintu taka kete nise. App e 'transaction unsuccessful' lekha othocho 670 kata. Biller taka pay nai.",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "banglalink number e 300 taka recharge dite giye error aslo, recharge fail. Sim e recharge ase nai othocho bikash theke taka kete niche. Fail howa recharge er taka ferot chai.",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "amar movie ticket 600 taka payment dite giye fail hoye gelo, seat o lock holo na, kintu taka kete nilo. payment fail kintu taka deduct hoise, ki korbo?",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "titas gas bill 1080 taka dite giye 'transaction failed' aslo, kintu balance theke 1080 taka kete fellwhat. bill pay o hoy nai. ei fail transaction er taka ferot din.",
+      "language": "mixed",
+      "expected_case_type": "payment_failed"
+    },
+    {
+      "complaint": "I bought a 1GB internet data pack for 48 BDT through bKash an hour ago but I've changed my mind and no longer need it. Can you please cancel it and refund the amount back to my bKash account?",
+      "language": "en",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "I placed an order on the merchant app and paid 2,350 taka via bKash. I want to cancel this order because I found the same item cheaper elsewhere. Please process a refund.",
+      "language": "en",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "Hi, I recharged a movie ticket bundle for 600 BDT but my plans changed and I can't go. The payment went through fine, I just want my money back to bKash.",
+      "language": "en",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "I paid 5,000 taka to a merchant for a jacket but I changed my mind and don't want the product anymore. The transaction was successful. How do I get a refund?",
+      "language": "en",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "Please refund my purchase of 1,200 BDT. The payment to the online store was completed but I decided I no longer want the item. Kindly cancel and return the money.",
+      "language": "en",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "I successfully paid 899 taka for a subscription using bKash but I want to cancel it within the cooling-off period. Can you refund me please? Nothing was wrong with the payment, I just changed my mind.",
+      "language": "en",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "Bought a gift voucher worth 3,000 BDT via bKash payment yesterday. My friend already has one, so I'd like to cancel and get a refund. The payment itself was perfectly fine.",
+      "language": "en",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "I ordered food for 720 taka and paid through bKash, but I want to cancel the order because I'm not hungry anymore. Please refund the amount back to me.",
+      "language": "en",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "Hello, I made a valid payment of 4,500 BDT for an online course but I no longer wish to take it. Can I get my money refunded? The transaction completed successfully.",
+      "language": "en",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "I purchased a flight booking add-on for 1,800 taka with bKash. Changed my travel plans completely and want to cancel. Please return the funds to my account.",
+      "language": "en",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "Paid 250 BDT for an app premium feature but realized I don't need it. The payment was successful, I'd just like a refund since I changed my mind.",
+      "language": "en",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "I bought two concert passes for 6,400 taka total through bKash payment. Now neither of us can attend, so please cancel the order and refund the full amount.",
+      "language": "en",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "আমি গতকাল bKash দিয়ে একটি শার্ট ৯৫০ টাকায় কিনেছিলাম, কিন্তু এখন আমার আর প্রোডাক্টটি লাগছে না। অর্ডার বাতিল করে টাকা ফেরত দিন।",
+      "language": "bn",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "পেমেন্ট সফল হয়েছে, ২,৩০০ টাকা মার্চেন্টকে দিয়েছি। কিন্তু আমি মন বদলে ফেলেছি, জিনিসটা আর কিনব না। দয়া করে রিফান্ড করুন।",
+      "language": "bn",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "আমি একটি ডেটা প্যাক ৪৮ টাকায় কিনেছি কিন্তু এখন প্রয়োজন নেই। ট্রানজেকশন ঠিকঠাক হয়েছে, শুধু টাকাটা ফেরত চাই।",
+      "language": "bn",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "অনলাইন শপে ৩,৭৫০ টাকা দিয়ে একটা ব্যাগ অর্ডার করেছিলাম। এখন অর্ডারটা ক্যানসেল করতে চাই কারণ আমার পছন্দ হয়নি। রিফান্ড দিন প্লিজ।",
+      "language": "bn",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "৬০০ টাকার একটা সাবস্ক্রিপশন bKash দিয়ে কিনেছি, কিন্তু আমি আর এটা চালাতে চাই না। পেমেন্ট ঠিক আছে, শুধু বাতিল করে টাকা ফেরত দিন।",
+      "language": "bn",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "ভাই, আমি ১,৫০০ টাকায় একটা গিফট কার্ড কিনেছিলাম কিন্তু এখন দরকার নেই। দয়া করে অর্ডারটা ক্যানসেল করে রিফান্ড করে দেন।",
+      "language": "bn",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "খাবার অর্ডার করেছিলাম ৮২০ টাকার, পেমেন্ট হয়ে গেছে। কিন্তু এখন আর খাব না, অর্ডার বাতিল করে টাকা ফেরত দিতে চাই।",
+      "language": "bn",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "আমি একটা অনলাইন কোর্সের জন্য ৪,২০০ টাকা পেমেন্ট করেছি bKash দিয়ে। এখন আর কোর্সটা করতে চাই না, রিফান্ড চাই। লেনদেন সফল ছিল।",
+      "language": "bn",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "৫,০০০ টাকায় একটা জুতা কিনেছিলাম মার্চেন্ট পেমেন্টে। মন বদলে গেছে, প্রোডাক্ট আর চাই না। কিভাবে টাকা ফেরত পাব?",
+      "language": "bn",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "সিনেমার দুইটা টিকিট ৯০০ টাকায় কিনেছি bKash এ, কিন্তু যেতে পারছি না। দয়া করে বাতিল করে পুরো টাকা ফেরত দিন।",
+      "language": "bn",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "একটা অ্যাপের প্রিমিয়াম ফিচার ৩০০ টাকায় কিনেছিলাম, এখন মনে হচ্ছে দরকার ছিল না। পেমেন্ট সফল, শুধু রিফান্ড দিয়ে দিন।",
+      "language": "bn",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "আমি ২,৮০০ টাকার একটা হেডফোন অর্ডার করেছিলাম। এখন একই জিনিস কম দামে পেয়েছি, তাই অর্ডার ক্যানসেল করে রিফান্ড চাই।",
+      "language": "bn",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "ami akta shirt kinsilam 950 taka te bKash diye, kintu ekhon mon change hoye gese ar lagbe na. order cancel kore taka ferot den plz.",
+      "language": "mixed",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "payment to thik moto hoyse, 2300 taka merchant ke disi. kintu ami ar product ta nibo na. refund kore den please.",
+      "language": "mixed",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "bhai data pack 48 takar kinsi but ekhon dorkar nai. transaction thik asilo, sudhu taka ta ferat chai.",
+      "language": "mixed",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "online shop e 3750 taka die akta bag order korsilam, ekhon pochondo hoy nai tai cancel korte chai. refund dele valo hoy.",
+      "language": "mixed",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "ekta subscription 600 takay kinsi bKash die, kintu ar continue korbo na. payment fine asilo, just cancel kore refund den.",
+      "language": "mixed",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "ami 1500 takay gift card kinsilam kintu ekhon ar lagtese na. order ta cancel kore taka ferot dia den vai.",
+      "language": "mixed",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "khabar order korsilam 820 takar, payment hoye gese. kintu ekhon ar khabo na, order cancel kore refund chai.",
+      "language": "mixed",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "akta online course er jonno 4200 taka diye disi bKash e. ekhon ar course ta korbo na, refund chai. lenden successful chilo.",
+      "language": "mixed",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "5000 takay ekta jacket kinsilam merchant payment e. mon change hoye gese, product ta r chai na. taka kivabe ferot pabo?",
+      "language": "mixed",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "cinema r duita ticket 900 takay kinsi bKash diye but jete partesi na. plz cancel kore puro taka ferat dia den.",
+      "language": "mixed",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "app er premium feature 300 takay kinsilam, ekhon mone hocche dorkar chilo na. payment shofol, sudhu refund kore den.",
+      "language": "mixed",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "ami 2800 takar akta headphone order disilam kintu same jinis ekhon kom dame paisi, tai order cancel kore refund dite chai.",
+      "language": "mixed",
+      "expected_case_type": "refund_request"
+    },
+    {
+      "complaint": "I paid my electricity bill through bKash but the amount of 1,250 BDT was deducted twice from my account for the same payment. Please refund the duplicate charge.",
+      "language": "en",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "While buying groceries at the merchant counter, the payment screen froze so I tapped pay again, and now I see two identical charges of 870 taka for one single purchase.",
+      "language": "en",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "My phone recharge of 200 BDT went through but bKash charged me two times for the exact same recharge. Both deductions show in my statement within the same minute.",
+      "language": "en",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "I made a single online order payment of 3,400 taka, but the money was cut twice. One order, double payment. Kindly reverse the extra one.",
+      "language": "en",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "Paid the same school fee of 5,000 BDT and got charged for it twice. The merchant confirms they only received it once, so where did my second payment go?",
+      "language": "en",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "There are two transactions of 1,799 taka to the same shop at the same time for one item I bought. This is clearly a double charge, please fix it.",
+      "language": "en",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "My restaurant bill was 642 taka. The app said payment failed so I retried, but actually both attempts succeeded and I was billed twice for one meal.",
+      "language": "en",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "I bought a bus ticket once but my bKash shows the 450 BDT fare deducted two separate times. Please return the duplicate amount.",
+      "language": "en",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "Same payment, charged twice. I sent 2,200 taka to the merchant for one purchase and the identical amount was taken again two seconds later.",
+      "language": "en",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "I topped up my internet package for 549 taka and the system double-billed me. Two identical charges for a single data pack purchase.",
+      "language": "en",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "When I paid 980 BDT at the pharmacy the network was slow, I pressed confirm twice and ended up paying the same bill twice. Need the second one refunded.",
+      "language": "en",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "One movie ticket booking, but bKash deducted 320 taka two times for it. Same merchant, same amount, back to back. This is a duplicate transaction.",
+      "language": "en",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "আমি একটি কেনাকাটার জন্য ৭৫০ টাকা পেমেন্ট করেছি কিন্তু একই পেমেন্ট দুইবার কেটে নিয়েছে। অতিরিক্ত টাকাটা ফেরত দিন।",
+      "language": "bn",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "বিদ্যুৎ বিল পরিশোধ করার সময় একই বিলের জন্য ১,৩৫০ টাকা দুইবার কাটা হয়েছে। একবার দিলেই হতো, ডাবল চার্জ হলো কেন?",
+      "language": "bn",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "দোকানে পেমেন্ট করার সময় স্ক্রিন আটকে যাওয়ায় আবার চাপ দিয়েছিলাম, এখন দেখছি একই ৯২০ টাকা দুইবার কেটে নিয়েছে এক কেনাকাটার জন্য।",
+      "language": "bn",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "আমার মোবাইল রিচার্জ ছিল ১০০ টাকা কিন্তু bKash একই রিচার্জের জন্য দুইবার টাকা কেটেছে। একই সময়ে দুইটা লেনদেন দেখাচ্ছে।",
+      "language": "bn",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "একটি অর্ডারের পেমেন্ট ২,৬০০ টাকা একবার করেছি, কিন্তু একই টাকা দুইবার কাটা হয়ে গেছে। দয়া করে দ্বিতীয়বারের টাকা ফেরত দিন।",
+      "language": "bn",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "স্কুলের বেতন ৪,০০০ টাকা একবার পরিশোধ করেছি, কিন্তু আমার অ্যাকাউন্ট থেকে দুইবার সমান টাকা কেটে গেছে। মার্চেন্ট বলছে একবারই পেয়েছে।",
+      "language": "bn",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "একই রেস্টুরেন্টের বিল ৫৮০ টাকা পরপর দুইবার কেটে নিয়েছে। আমি তো একবারই খেয়েছি, দুইবার চার্জ হলো কেন?",
+      "language": "bn",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "ইন্টারনেট প্যাকেজ ৪৯৯ টাকায় কিনেছি একবার, কিন্তু একই প্যাকেজের জন্য দুইবার টাকা কাটা হয়েছে। অতিরিক্ত টাকাটা ফেরত চাই।",
+      "language": "bn",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "পেমেন্ট ফেইল দেখিয়েছিল তাই আবার করেছি, কিন্তু দুইবারই হয়ে গেছে। এক কেনার জন্য ১,১৫০ টাকা ডাবল কাটা হয়েছে।",
+      "language": "bn",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "একটি বাস টিকিটের ভাড়া ৬০০ টাকা, কিন্তু bKash থেকে একই ভাড়া দুইবার কেটে নিয়েছে। একটাই টিকিট কাটলাম, টাকা গেল দুইবার।",
+      "language": "bn",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "একই পেমেন্ট দুইবার হয়ে গেছে। ফার্মেসিতে ৮৪০ টাকা বিল দিতে গিয়ে দুইবার কনফার্ম চাপায় সমান টাকা দুইবার কাটল।",
+      "language": "bn",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "সিনেমার একটা টিকিট বুক করেছি, কিন্তু ৩৫০ টাকা পরপর দুইবার কেটেছে। একই মার্চেন্ট, একই অ্যামাউন্ট, এটা ডুপ্লিকেট লেনদেন।",
+      "language": "bn",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "ami ekta jinish kinte gie 720 taka payment korlam kintu same payment dui bar kete nise. extra taka ta ferot chai.",
+      "language": "mixed",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "bidyut bill dite gie same bill er jonno 1250 tk dui baar kata hoyse. ekbar dileo to cholto, double charge holo keno?",
+      "language": "mixed",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "dokane payment korar somoy screen atke gelo, abar press korlam, ekhon dekhi same 880 taka dui bar kete nise ek kenakatar jonno.",
+      "language": "mixed",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "amar recharge chilo 200 tk kintu bkash same recharge er jonno duibar taka ketese. ek somoy e duita transaction dekhacche.",
+      "language": "mixed",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "ekta order er payment 3100 taka ekbar korsi but same taka dui baar kete gese. doya kore ditiyo bar er taka ferat din.",
+      "language": "mixed",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "school fee 5000 tk ekbar disi but account theke duibar soman taka kete gese. merchant bole ekbar e peyeche, baki taka gelta kothay?",
+      "language": "mixed",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "payment fail dekhaichilo tai abar dilam, kintu duitai hoye gese. ek kenar jonno 1450 taka double cut hoise.",
+      "language": "mixed",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "same restaurant er bill 640 tk porpor dui baar kete nise. ami to ekbar e khaisi, duibar charge holo keno bujhtesi na.",
+      "language": "mixed",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "internet pack 499 takay kinsi ekbar, kintu same pack er jonno duibar taka kata hoise. extra ta ferot dile valo hoy.",
+      "language": "mixed",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "ekta bus ticket katlam but bkash theke same vara 550 tk duibar kete nise. ekta ticket, taka gelo dui bar.",
+      "language": "mixed",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "same payment dubar hoye gese vai. pharmacy te 920 taka bill dite confirm dui bar e chap porlo r soman taka dui baar cut holo.",
+      "language": "mixed",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "ekta cinema ticket book korsi kintu 330 taka porpor dui baar kete gese. same merchant same amount, eta to duplicate transaction.",
+      "language": "mixed",
+      "expected_case_type": "duplicate_payment"
+    },
+    {
+      "complaint": "I run a small grocery store and use bKash merchant account for payments. My customers paid me a total of 18,500 BDT yesterday but the settlement to my bank account still hasn't come through. Usually it arrives next day. Where is my money?",
+      "language": "en",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "Hello, I am a registered merchant. Sales from the last three days, roughly 42,000 taka, were supposed to be disbursed to my account by now but the payout is stuck. Please tell me when my settlement will be processed.",
+      "language": "en",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "My merchant till collected around 9,200 BDT in payments on Tuesday. The amount shows as received in my merchant app but it has not settled into my linked bank account. It's been 4 days now. This delay is hurting my cash flow.",
+      "language": "en",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "As a pharmacy owner I accept bKash merchant payments daily. The T+1 settlement for the weekend sales never landed. I'm missing about 27,300 taka in payouts. Can you check why my disbursement is pending?",
+      "language": "en",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "We are a clothing boutique with a bKash merchant number. Customers paid us 55,000 BDT during Eid sale but the settlement to our company account is still showing as 'in process' for a week. When will the funds clear?",
+      "language": "en",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "My restaurant's merchant account received over 60 transactions worth about 31,000 taka, but the daily payout did not hit my bank. The dashboard says settled but my bank shows nothing. Need this resolved urgently for supplier payments.",
+      "language": "en",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "I have not received my merchant settlement for 6 days straight. Total pending is around 78,000 BDT from accumulated sales. My disbursement schedule says next-day but everything is delayed. Please escalate.",
+      "language": "en",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "Good morning. I own an electronics shop and our bKash payment collections of 1,15,000 taka from last week have not been settled to our current account yet. The payout window has passed twice. Kindly look into the settlement delay.",
+      "language": "en",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "Why is my seller payout taking so long? I collected 14,750 BDT through my merchant QR code two days ago and the money still hasn't been deposited to my bank. Other merchants in my market already got theirs.",
+      "language": "en",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "This is regarding my merchant disbursement. Sales of 23,400 taka are marked as 'settlement pending' since Sunday. It usually settles automatically overnight. The funds are not reaching my account and I cannot pay my staff.",
+      "language": "en",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "I run an online page and use bKash merchant to take orders. My weekly settlement of approximately 47,000 BDT was due Monday but it's now Thursday with no deposit. Please confirm when my payout will be released.",
+      "language": "en",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "My tea stall accepts merchant payments and the small amounts add up. About 6,800 taka of collected sales hasn't been transferred to my account in five days. The settlement seems frozen. Can someone fix the payout?",
+      "language": "en",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "আমি একজন বিকাশ মার্চেন্ট। গতকাল আমার দোকানে কাস্টমাররা প্রায় ১৯,৫০০ টাকার পেমেন্ট করেছে কিন্তু আমার ব্যাংক একাউন্টে সেটেলমেন্ট এখনো আসেনি। সাধারণত পরের দিন চলে আসে। আমার টাকা কবে পাব?",
+      "language": "bn",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "আমার মুদি দোকানের মার্চেন্ট নম্বরে গত তিন দিনে মোট ৩৮,০০০ টাকা বিক্রি হয়েছে, কিন্তু পেআউট এখনো ব্যাংকে জমা হয়নি। সেটেলমেন্ট আটকে আছে। দয়া করে দেখুন কেন বিলম্ব হচ্ছে।",
+      "language": "bn",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "আমি একটি ফার্মেসি চালাই। সপ্তাহের শেষের বিক্রির প্রায় ২৬,৭০০ টাকা সেটেল হওয়ার কথা ছিল কিন্তু আমার অ্যাকাউন্টে আসেনি। মার্চেন্ট অ্যাপে রিসিভড দেখাচ্ছে অথচ ব্যাংকে কিছু নেই।",
+      "language": "bn",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "আমার রেস্টুরেন্টের মার্চেন্ট একাউন্টে ৩২,০০০ টাকার বেশি পেমেন্ট জমা হয়েছে, কিন্তু ডেইলি পেআউট ব্যাংকে ঢোকেনি। সাপ্লায়ারকে টাকা দিতে হবে, জরুরি ভিত্তিতে সেটেলমেন্ট সমস্যাটা সমাধান করুন।",
+      "language": "bn",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "৬ দিন ধরে আমার মার্চেন্ট সেটেলমেন্ট পাচ্ছি না। জমে থাকা বিক্রি থেকে প্রায় ৭৫,০০০ টাকা পেন্ডিং। ডিসবার্সমেন্ট তো পরের দিনই হওয়ার কথা। বিষয়টি দ্রুত এসকালেট করুন।",
+      "language": "bn",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "আমি একটি কাপড়ের দোকানের মালিক। ঈদের বিক্রির ৫৮,০০০ টাকা কাস্টমাররা বিকাশে দিয়েছে কিন্তু কোম্পানি একাউন্টে সেটেলমেন্ট এক সপ্তাহ ধরে 'প্রসেসিং' দেখাচ্ছে। টাকা কখন ক্লিয়ার হবে?",
+      "language": "bn",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "আমার মার্চেন্ট কিউআর কোডে দুই দিন আগে ১৫,২০০ টাকা পেমেন্ট নিয়েছিলাম, কিন্তু এখনো ব্যাংকে জমা হয়নি। বাজারের অন্য দোকানদাররা তাদের পেআউট পেয়ে গেছে। আমার টাকা কেন আটকে?",
+      "language": "bn",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "ইলেকট্রনিক্সের দোকান চালাই। গত সপ্তাহের ১,১০,০০০ টাকার বিকাশ কালেকশন এখনো কারেন্ট একাউন্টে সেটেল হয়নি। পেআউট উইন্ডো দুইবার পার হয়ে গেছে। সেটেলমেন্ট ডিলে নিয়ে দেখুন।",
+      "language": "bn",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "আমার মার্চেন্ট ডিসবার্সমেন্ট নিয়ে অভিযোগ। রবিবার থেকে ২৪,৪০০ টাকার বিক্রি 'সেটেলমেন্ট পেন্ডিং' দেখাচ্ছে। সাধারণত রাতেই অটো সেটেল হয়। কর্মচারীদের বেতন দিতে পারছি না।",
+      "language": "bn",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "আমি অনলাইনে পেজ চালাই, অর্ডার নিতে বিকাশ মার্চেন্ট ব্যবহার করি। প্রায় ৪৬,০০০ টাকার সাপ্তাহিক সেটেলমেন্ট সোমবার পাওয়ার কথা ছিল, এখন বৃহস্পতিবার তবু জমা হয়নি। পেআউট কবে ছাড়বেন?",
+      "language": "bn",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "আমার চায়ের দোকানে মার্চেন্ট পেমেন্টে ছোট ছোট অংক জমা হয়ে প্রায় ৭,১০০ টাকা হয়েছে, কিন্তু পাঁচ দিনেও একাউন্টে ট্রান্সফার হয়নি। সেটেলমেন্ট যেন আটকে গেছে। ঠিক করে দিন।",
+      "language": "bn",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "আমি রেজিস্টার্ড মার্চেন্ট। মঙ্গলবারের বিক্রির ৯,৪০০ টাকা মার্চেন্ট অ্যাপে রিসিভড দেখাচ্ছে অথচ লিংক করা ব্যাংক একাউন্টে সেটেল হয়নি। চার দিন হয়ে গেল, ক্যাশ ফ্লোতে সমস্যা হচ্ছে।",
+      "language": "bn",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "vai ami merchant, amar dokane gotokal customer ra mile 17,500 taka payment dise but settlement ekhono bank e ashe nai. normally porer din e cole ashe. amar taka kobe paimu?",
+      "language": "mixed",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "amar mudi dokaner merchant number e last 3 din e total 40 hajar er moto bikri hoise, kintu payout ekhono bank e jma hoy nai. settlement atke ase, doya kore dekhen keno deri hocche.",
+      "language": "mixed",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "ami pharmacy chalai, weekend er bikrir prai 28000 tk settle howar kotha chilo kintu account e ashe nai. merchant app e received dekhacche othocho bank e kichu nai. T+1 settlement hoy nai.",
+      "language": "mixed",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "amar restaurant er merchant account e 33 hajar takar beshi payment jma hoise but daily payout ta bank e dhoke nai. supplier ke taka dite hobe, joruri vabe ei settlement problem ta solve koren.",
+      "language": "mixed",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "6 din dhore amar merchant settlement pacchi na. jome thaka bikri theke prai 80 hajar taka pending. disbursement to next day e howar kotha. plz ektu escalate koren bhai.",
+      "language": "mixed",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "ami ekta kaporer dokaner malik. eid er bikrir 60000 taka customer ra bikash e dise but company account e settlement ek week dhore processing dekhacche. taka kokhon clear hobe?",
+      "language": "mixed",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "amar merchant QR e dui din age 14750 tk payment nisilam, kintu ekhono bank e jma hoy nai. bazar er onno dokandar ra tader payout paya gese, amar taka keno atke royeche?",
+      "language": "mixed",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "electronics er dokan chalai. gato shoptaher 1 lakh 10 hajar takar bkash collection ekhono current account e settle hoy nai. payout window dui bar par hoye gese. settlement delay ta dekhen plz.",
+      "language": "mixed",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "amar merchant disbursement niye complain. robibar theke 25 hajar takar bikri settlement pending dekhacche. normally rate auto settle hoye jay. staff er beton dite partesi na, taratari koren.",
+      "language": "mixed",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "ami online page chalai, order nite bkash merchant use kori. prai 47000 takar weekly settlement somobar pawar kotha chilo, ekhon brihospotibar tobu jma hoy nai. payout kobe release korben?",
+      "language": "mixed",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "amar cha er dokane merchant payment e choto choto onko jome 6800 tk hoise, kintu 5 din eo account e transfer hoy nai. settlement jeno atke gese. ekta solution den vai.",
+      "language": "mixed",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "ami registered merchant, mongolbar er bikrir 9200 taka merchant app e received dekhay othocho link kora bank account e settle hoy nai. 4 din hoye gelo, cash flow e bishal somossa hocche.",
+      "language": "mixed",
+      "expected_case_type": "merchant_settlement_delay"
+    },
+    {
+      "complaint": "I went to my local bKash agent this morning and deposited 5000 taka cash-in to my account. The agent gave me the slip and even showed me the confirmation on his phone, but my balance still shows the old amount. Nothing has been added.",
+      "language": "en",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "Did a cash in of 3000 BDT through an agent near my office two hours ago. He took my money and said it's done, but I never got any SMS and my account balance is unchanged. Please check.",
+      "language": "en",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "The agent at the shop processed a 2500 taka deposit into my bKash number but the money hasn't reached my wallet. It's been more than an hour and the balance is still showing zero added.",
+      "language": "en",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "I handed over 10000 cash to the bKash agent for a cash-in. His transaction was successful on his side according to him, but I have received nothing in my account. Where is my money?",
+      "language": "en",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "Yesterday evening I did an agent cash in of 1500 taka. The agent confirmed it went through but my balance was never credited. Still waiting for the amount to show up today.",
+      "language": "en",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "My salary deposit through the bKash agent of 7000 taka is missing. The agent showed me his success screen with my number on it, but my own account shows no cash-in at all.",
+      "language": "en",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "Cash in done at agent point, amount 4200 BDT. Agent says completed, took the cash, but I got no confirmation message and the money is not in my bKash balance. Please look into this transaction.",
+      "language": "en",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "I deposited 6000 taka via an agent for my account but the wrong thing happened, the balance didn't increase. The agent insists it was sent to my number. My wallet hasn't received the cash-in.",
+      "language": "en",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "Went to the agent to put money in my bKash. Gave 800 taka, he did the cash-in, gave me a paper receipt, but no SMS came and my balance is the same as before. The deposit never reflected.",
+      "language": "en",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "An agent cash-in of 12000 taka to my number is not showing in my account. It's been since morning. The agent's record shows success but the amount never got added to my balance.",
+      "language": "en",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "I gave the bKash agent 2000 cash to deposit. He typed my number and confirmed, but I checked my balance right after and nothing was added. The money I handed over has vanished.",
+      "language": "en",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "Cash in through agent of 3500 taka still pending on my side. The shopkeeper agent says it's completed from his account but my bKash balance hasn't been updated at all since I paid him.",
+      "language": "en",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "আমি দোকানের এজেন্টের কাছে ৫০০০ টাকা ক্যাশ ইন করেছি, এজেন্ট বলল হয়ে গেছে কিন্তু আমার বিকাশ ব্যালেন্সে টাকা যোগ হয়নি।",
+      "language": "bn",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "এজেন্টের মাধ্যমে ৩০০০ টাকা জমা দিয়েছি আমার নম্বরে, কিন্তু এক ঘণ্টা হয়ে গেল কোনো এসএমএস আসেনি আর ব্যালেন্সও বাড়েনি।",
+      "language": "bn",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "আজ সকালে বিকাশ এজেন্টকে ২৫০০ টাকা দিলাম ক্যাশ ইন করার জন্য। সে রসিদ দিয়েছে কিন্তু আমার অ্যাকাউন্টে এখনো টাকা ঢোকেনি।",
+      "language": "bn",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "আমার কাছ থেকে এজেন্ট ১০০০০ টাকা নিল ক্যাশ ইনের জন্য, বলল সফল হয়েছে, কিন্তু আমার ওয়ালেটে একটা টাকাও আসেনি। আমার টাকা কোথায়?",
+      "language": "bn",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "গতকাল রাতে এজেন্ট দিয়ে ১৫০০ টাকা ক্যাশ ইন করিয়েছিলাম। এজেন্ট কনফার্ম করেছে কিন্তু আমার ব্যালেন্সে যোগ হয়নি, এখনো অপেক্ষা করছি।",
+      "language": "bn",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "এজেন্টের দোকানে ৭০০০ টাকা জমা দিয়েছি কিন্তু সেই ক্যাশ ইন আমার বিকাশে দেখাচ্ছে না। এজেন্ট তার ফোনে সাকসেস দেখাল অথচ আমার নম্বরে টাকা নেই।",
+      "language": "bn",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "৪২০০ টাকা ক্যাশ ইন করেছি এজেন্ট পয়েন্টে। এজেন্ট বলেছে কমপ্লিট, টাকাও নিয়েছে, কিন্তু আমি কোনো কনফার্মেশন মেসেজ পাইনি আর ব্যালেন্সে টাকা নেই।",
+      "language": "bn",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "এজেন্ট দিয়ে আমার অ্যাকাউন্টে ৬০০০ টাকা জমা দিয়েছিলাম কিন্তু ব্যালেন্স বাড়েনি। এজেন্ট বলছে সে আমার নম্বরেই পাঠিয়েছে, অথচ ক্যাশ ইন আসেনি।",
+      "language": "bn",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "বিকাশে টাকা ঢোকাতে এজেন্টের কাছে গেলাম, ৮০০ টাকা দিলাম, সে ক্যাশ ইন করল আর কাগজের রসিদ দিল, কিন্তু কোনো এসএমএস আসেনি আর ব্যালেন্স আগের মতোই আছে।",
+      "language": "bn",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "আমার নম্বরে এজেন্টের ১২০০০ টাকার ক্যাশ ইন অ্যাকাউন্টে দেখাচ্ছে না। সকাল থেকে অপেক্ষা করছি। এজেন্টের রেকর্ডে সফল কিন্তু আমার ব্যালেন্সে যোগ হয়নি।",
+      "language": "bn",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "এজেন্টকে ২০০০ টাকা নগদ দিলাম জমা দেওয়ার জন্য। সে আমার নম্বর টাইপ করে কনফার্ম করল, কিন্তু সাথে সাথে ব্যালেন্স দেখলাম কিছু যোগ হয়নি। টাকাটা গেল কোথায়?",
+      "language": "bn",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "এজেন্ট দিয়ে ৩৫০০ টাকা ক্যাশ ইন এখনো আমার দিকে পেন্ডিং। দোকানদার এজেন্ট বলছে তার অ্যাকাউন্ট থেকে কমপ্লিট হয়েছে কিন্তু আমার বিকাশ ব্যালেন্স আপডেট হয়নি।",
+      "language": "bn",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "ami agent er kache 5000 taka cash in korechi, agent bollo hoye gese kintu amar bkash e taka ase nai. balance same achee.",
+      "language": "mixed",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "agent diye 3000 taka deposit korlam amar number e, ek ghonta hoye gelo kintu kono sms o ase nai ar balance o bare nai. ekta dekhen.",
+      "language": "mixed",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "aj shokale bkash agent ke 2500 taka dilam cash in korar jonno. she slip dise but akhono amar account e taka dhoke nai.",
+      "language": "mixed",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "agent amar theke 10000 taka nilo cash in er jonno, bollo success, kintu amar wallet e ek taka o ase nai. amar taka kothay gelo?",
+      "language": "mixed",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "gotokal raate agent diye 1500 taka cash in koraisilam. agent confirm korse but amar balance e jog hoy nai, akhono wait kortesi.",
+      "language": "mixed",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "agent er dokane 7000 taka joma disi but oi cash in amar bkash e dekhacche na. agent tar phone e success dekhailo othocho amar number e taka nai.",
+      "language": "mixed",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "4200 taka cash in korsi agent point e. agent bollo complete, takao nise, kintu ami kono confirmation message pai nai ar balance e taka nai.",
+      "language": "mixed",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "agent diye amar account e 6000 taka joma disilam kintu balance bare nai. agent bolche she amar number eei pathaise, othocho cash in ase nai.",
+      "language": "mixed",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "bkash e taka dhokate agent er kache gelam, 800 taka dilam, she cash in korlo ar kagojer slip dilo, kintu kono sms ase nai ar balance ager motoi.",
+      "language": "mixed",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "amar number e agent er 12000 takar cash in account e dekhacche na. shokal theke wait kortesi. agent er record e success kintu amar balance e jog hoy nai.",
+      "language": "mixed",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "agent ke 2000 taka cash dilam joma debar jonno. she amar number type kore confirm korlo, kintu shathe shathe balance dekhlam kichu add hoy nai. takata gelo kothay?",
+      "language": "mixed",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "agent diye 3500 taka cash in akhono amar dike pending. dokandar agent bolche tar account theke complete hoise but amar bkash balance update hoy nai akhono.",
+      "language": "mixed",
+      "expected_case_type": "agent_cash_in_issue"
+    },
+    {
+      "complaint": "I got a call just now from someone claiming to be from bKash head office. He said my account will be blocked within 1 hour unless I confirm my account by telling him the OTP that was just sent to my phone. I didn't give it but I want to report this number, it looks like a scam.",
+      "language": "en",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "Received an SMS saying 'Congratulations, you have won 25000 Taka from bKash lottery. To claim, send your PIN to this agent number.' This is obviously fake right? I'm reporting it so others don't fall for it.",
+      "language": "en",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "A person called me pretending to be a bKash customer care officer. He knew my name and last transaction and then asked me to dial a code and share the 6 digit verification number to 'upgrade my account to merchant'. I felt this was a fraud attempt and hung up.",
+      "language": "en",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "Someone messaged me on WhatsApp claiming my bKash account was used for illegal activity and police will be involved unless I verify my PIN and OTP immediately. Clearly a threat to scare me into giving my password. Please take action against this number.",
+      "language": "en",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "I want to report a suspicious caller. He said he is calling from 16247 and that there is a 'system update' and my account will be deactivated tonight if I don't tell him the code sent by SMS. I know bKash never asks for PIN, so I'm flagging this.",
+      "language": "en",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "Got a fake link by SMS that looked like a bKash page asking me to log in with my number and PIN to receive a 'refund'. I almost typed my PIN but stopped. The link was bkash-verify-bd dot com or something. Reporting this phishing attempt.",
+      "language": "en",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "A guy called and said he is from bKash and that by mistake 5000 taka was sent to my number, and to return it I must share the OTP he is sending. He was very pushy and threatening to lock my account. This is a scam and I want it reported.",
+      "language": "en",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "Someone is impersonating bKash agents in my area, going door to door telling people their accounts need 're-registration' and collecting PIN numbers. My neighbor lost money. I want to report this social engineering scam.",
+      "language": "en",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "I received a call from a +880 number, the man said if I don't confirm my identity by reading out the verification SMS within 5 minutes my account balance will be frozen permanently. Sounds like a fraudster trying to steal my OTP. Please investigate.",
+      "language": "en",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "An automated voice message told me my bKash account has a security issue and asked me to press 1 and enter my PIN to keep it active. I did not enter anything. This is a phishing robocall and I'm reporting the number.",
+      "language": "en",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "Hi, I just want to warn you that there is a Facebook page using the bKash logo offering 'cashback rewards' and asking people to submit their mobile number, PIN and the OTP code. It's a fraud page trying to hack accounts. Reporting it.",
+      "language": "en",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "A caller pretended to be from bKash support and said my SIM is being cloned and to protect my money I should tell him my PIN so he can 'secure' the account. Obviously a scam to drain my balance. I refused but want to report this attempt.",
+      "language": "en",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "একটু আগে একটা নাম্বার থেকে কল এসেছিল, লোকটা বলল সে বিকাশ অফিস থেকে বলছে এবং আমার একাউন্ট নাকি ১ ঘন্টার মধ্যে বন্ধ হয়ে যাবে যদি আমি ওটিপি কোড না বলি। আমি দেইনি, কিন্তু এই প্রতারক নাম্বারটা রিপোর্ট করতে চাই।",
+      "language": "bn",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "একটা এসএমএস এসেছে যেখানে লেখা 'অভিনন্দন, আপনি বিকাশ লটারিতে ৫০,০০০ টাকা জিতেছেন, পুরস্কার পেতে আপনার পিন এবং কোড পাঠান'। এটা স্পষ্টতই একটা ফাঁদ। আমি অভিযোগ জানাচ্ছি যাতে অন্য কেউ প্রতারিত না হয়।",
+      "language": "bn",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "একজন লোক নিজেকে বিকাশ কাস্টমার কেয়ার অফিসার পরিচয় দিয়ে ফোন করে বলল আমার একাউন্ট আপগ্রেড করতে হলে মোবাইলে আসা ৬ সংখ্যার ভেরিফিকেশন কোডটা বলতে হবে। আমার মনে হলো এটা প্রতারণা, তাই কেটে দিয়েছি। বিষয়টা জানালাম।",
+      "language": "bn",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "হোয়াটসঅ্যাপে একজন মেসেজ দিয়ে বলছে আমার বিকাশ একাউন্ট দিয়ে নাকি অবৈধ কাজ হয়েছে এবং পুলিশ আসবে যদি আমি এখনই পিন আর ওটিপি না দেই। আসলে আমাকে ভয় দেখিয়ে পাসওয়ার্ড নেওয়ার চেষ্টা করছে। এই নাম্বারের বিরুদ্ধে ব্যবস্থা নিন।",
+      "language": "bn",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "একটা সন্দেহজনক কল রিপোর্ট করতে চাই। লোকটা বলল সে ১৬২৪৭ থেকে বলছে, সিস্টেম আপডেট হচ্ছে, আজ রাতে আমার একাউন্ট বন্ধ হয়ে যাবে যদি আমি এসএমএসে আসা কোড না বলি। বিকাশ কখনো পিন চায় না জানি, তাই বিষয়টা ফ্ল্যাগ করছি।",
+      "language": "bn",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "এসএমএসে একটা ভুয়া লিংক এসেছে যেটা দেখতে বিকাশের পেজের মতো, সেখানে নাম্বার আর পিন দিয়ে লগইন করতে বলছে 'রিফান্ড' পাওয়ার জন্য। প্রায় পিন দিয়ে ফেলেছিলাম কিন্তু থেমে গেছি। এই ফিশিং চেষ্টাটা রিপোর্ট করছি।",
+      "language": "bn",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "একজন ফোন দিয়ে বলল সে বিকাশ থেকে বলছে, ভুল করে নাকি আমার নাম্বারে ৮০০০ টাকা চলে গেছে, ফেরত দিতে হলে সে যে ওটিপি পাঠাবে সেটা বলতে হবে। খুব চাপ দিচ্ছিল আর একাউন্ট লক করে দেওয়ার ভয় দেখাচ্ছিল। এটা প্রতারণা, রিপোর্ট করতে চাই।",
+      "language": "bn",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "আমাদের এলাকায় কিছু লোক বিকাশ এজেন্ট সেজে বাড়ি বাড়ি গিয়ে বলছে একাউন্ট নাকি 'পুনরায় রেজিস্ট্রেশন' করতে হবে আর পিন নাম্বার নিচ্ছে। আমার এক প্রতিবেশীর টাকা চলে গেছে। এই প্রতারণার ব্যাপারে অভিযোগ জানাচ্ছি।",
+      "language": "bn",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "একটা +৮৮০ নাম্বার থেকে কল এসে বলল ৫ মিনিটের মধ্যে ভেরিফিকেশন এসএমএস পড়ে না শোনালে আমার ব্যালেন্স স্থায়ীভাবে আটকে যাবে। মনে হচ্ছে কোনো প্রতারক আমার ওটিপি চুরি করতে চাইছে। অনুগ্রহ করে তদন্ত করুন।",
+      "language": "bn",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "একটা অটোমেটেড ভয়েস কল এসে বলল আমার বিকাশ একাউন্টে নিরাপত্তা সমস্যা আছে, একাউন্ট সচল রাখতে ১ চাপ দিয়ে পিন দিতে হবে। আমি কিছু দেইনি। এটা একটা ফিশিং রোবোকল, নাম্বারটা রিপোর্ট করছি।",
+      "language": "bn",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "একটা ফেসবুক পেজ বিকাশের লোগো ব্যবহার করে 'ক্যাশব্যাক অফার' দিচ্ছে আর মানুষের মোবাইল নাম্বার, পিন ও ওটিপি কোড জমা দিতে বলছে। এটা একটা ভুয়া পেজ যেটা একাউন্ট হ্যাক করতে চায়। বিষয়টা রিপোর্ট করছি।",
+      "language": "bn",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "একজন বিকাশ সাপোর্টের লোক সেজে বলল আমার সিম নাকি ক্লোন হচ্ছে এবং টাকা বাঁচাতে হলে পিন বলতে হবে যাতে সে একাউন্ট 'সুরক্ষিত' করতে পারে। স্পষ্ট প্রতারণা, ব্যালেন্স মেরে দেওয়ার ধান্দা। দেইনি, তবে চেষ্টাটা রিপোর্ট করছি।",
+      "language": "bn",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "ekjon ekhon call dia bollo se naki bkash head office theke, ar amar account naki 1 ghontar moddhe block hoye jabe jodi ami otp code na boli. ami dei nai, but ei prtarok number ta report korte chai.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "ekta sms aslo - 'congratulations apni bkash lottery te 30000 taka jitsen, taka nite apnar pin r code ei number e send korun'. eta to puropuri fake. report dilam jate r keu thoke na jay.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "ekjon nijeke bkash customer care officer porichoy dia phone disilo, amar nam r last lenden o jane, tarpor bollo account merchant banaite hole mobile e asha 6 digit code ta bolte hobe. amar mone holo eta fraud, tai kete dilam.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "whatsapp e ekjon message dia bollo amar bkash account diye naki illegal kaj hoise, police asbe jodi ami ekhuni pin r otp na dei. asole voy dekhaye password nite chacche. ei number er biruddhe bebostha nin please.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "ekta sondehojonok call report dite chai. lokta bollo se 16247 theke bolche, system update hocche, aj rate account bondho hoye jabe jodi sms er code ta na boli. ami jani bkash kokhono pin chay na, tai eta flag korlam.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "sms e ekta fake link aslo, dekhte bkash er page er moto, sekhane number ar pin dia login korte bolche 'refund' pawar jonno. prai pin dia felsilam kintu themechi. ei phishing chesta ta report korlam.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "ekjon phone dia bollo se bkash theke, bhul kore naki amar number e 6000 taka chole gese, ferot dite hole se je otp pathabe seta bolte hobe. khub chap dicchilo r account lock kore dewar voy dekhacchilo. eta scam, report korte chai.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "amader area te kichu lok bkash agent seje bari bari giye bolche account naki abar registration korte hobe r pin number nicche. amar ek protibeshir taka chole gese. ei prtarona r bepare ovijog dilam.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "ekta +880 number theke call ese bollo 5 minute er moddhe verification sms ta pore na shunale amar balance permanently atke jabe. mone hocche kono prtarok amar otp churi korte chacche. doya kore todonto korun.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "ekta automated voice call ese bollo amar bkash account e security problem ase, account sochol rakhte 1 chepe pin dite hobe. ami kichu dei nai. eta ekta phishing robocall, number ta report korlam.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "ekta facebook page bkash er logo use kore 'cashback offer' dicche r manusher mobile number, pin ar otp code joma dite bolche. eta ekta fake page ja account hack korte chay. bisoy ta report korlam.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "ekjon bkash support er lok seje bollo amar sim naki clone hocche ar taka bachate hole pin bolte hobe jate se account 'secure' korte pare. clear prtarona, balance mere dewar dhanda. dei nai, tobe ei chesta ta janacchi.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "akta unknown number theke call ese bollo apnar account e suspicious login hoise, account block hobar age verify korte mobile e asha code ta bolen. ami bujhe gesi eta scam, taka churi korar fandi, tai report dilam.",
+      "language": "mixed",
+      "expected_case_type": "phishing_or_social_engineering"
+    },
+    {
+      "complaint": "Something is wrong with my bKash account and I don't understand what. Can you please check it for me?",
+      "language": "en",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "My money doesn't feel right. The balance looks off but I'm not sure how. Please look into my account.",
+      "language": "en",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "I have a question about my account. Is everything okay with it? Just want to make sure nothing is wrong.",
+      "language": "en",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "Hi, I just need someone to explain my recent activity. I'm confused about my account overall but nothing specific.",
+      "language": "en",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "There seems to be some issue with my money but I can't say exactly what. Can you investigate generally?",
+      "language": "en",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "Can you tell me why my balance is what it is? I'm not sure if it's correct or not, something seems weird.",
+      "language": "en",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "I'm worried about my account. Not sure what's happening but it doesn't seem normal. Please help me understand.",
+      "language": "en",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "General question about my bKash. Is there anything I should be concerned about with my money?",
+      "language": "en",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "Something happened with my account I think, but I can't really describe it. Could you just check everything?",
+      "language": "en",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "My account feels strange lately. I don't know if it's a problem but can someone review it for me please?",
+      "language": "en",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "I need help with my money situation but it's hard to explain. Can you call me and we figure it out together?",
+      "language": "en",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "Hello, just checking if my account is fine. I have a vague feeling something is not right with my balance.",
+      "language": "en",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "আমার একাউন্টে কিছু একটা সমস্যা আছে মনে হচ্ছে, কিন্তু ঠিক বুঝতে পারছি না। একটু দেখে দিবেন প্লিজ?",
+      "language": "bn",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "আমার টাকা নিয়ে একটা প্রশ্ন ছিল। সব ঠিক আছে তো? কেমন যেন একটা গন্ডগোল মনে হচ্ছে।",
+      "language": "bn",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "আমার ব্যালেন্সটা ঠিক আছে কিনা একটু চেক করে বলবেন? কেন জানি ঠিক লাগছে না, কিন্তু কী সমস্যা বলতে পারছি না।",
+      "language": "bn",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "আমার একাউন্ট নিয়ে চিন্তায় আছি। কিছু একটা গোলমাল মনে হচ্ছে, একটু পুরোটা দেখে দিন না।",
+      "language": "bn",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "ভাই আমার টাকার ব্যাপারটা ঠিক বুঝতে পারছি না। সব কিছু একটু ভালো করে দেখবেন প্লিজ?",
+      "language": "bn",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "আমার একাউন্টটা কেমন যেন অদ্ভুত লাগছে আজকাল। সমস্যা কিনা জানি না, একটু রিভিউ করে দেন।",
+      "language": "bn",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "একটা সাধারণ প্রশ্ন ছিল, আমার bKash এ কি কোনো সমস্যা আছে যেটা নিয়ে আমার চিন্তা করা উচিত?",
+      "language": "bn",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "আমার মনে হচ্ছে টাকা নিয়ে কোথাও একটা ঝামেলা, কিন্তু নির্দিষ্ট করে বলতে পারছি না। সাহায্য করুন।",
+      "language": "bn",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "হ্যালো, আমার একাউন্ট ঠিকঠাক আছে কিনা একটু নিশ্চিত হতে চাই। কিছু একটা যেন ঠিক নেই মনে হচ্ছে।",
+      "language": "bn",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "আমার টাকার ব্যাপারে একটু কথা বলা দরকার, বুঝিয়ে বলা কঠিন। একটু ফোন দিয়ে দেখবেন বিষয়টা?",
+      "language": "bn",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "আমার সাম্প্রতিক লেনদেন গুলো একটু বুঝিয়ে দিবেন? পুরো একাউন্ট নিয়েই কেমন যেন কনফিউজড আছি।",
+      "language": "bn",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "ভাই কিছু একটা ঘটেছে আমার একাউন্টে মনে হয়, কিন্তু ঠিক বলতে পারছি না কী। সবটা একটু চেক করে দেন।",
+      "language": "bn",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "amar account e kichu ekta problem hoise mone hocche, but bujhte partesi na ki. ektu dekhe diben please?",
+      "language": "mixed",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "amar taka niye ekta question chilo. sob thik ache to? kemon jeno ekta gondogol mone hoy.",
+      "language": "mixed",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "balance ta thik ache kina ektu check kore bolen na, keno jani thik lagtese na kintu ki somossa janina.",
+      "language": "mixed",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "amar account ta kemon jeno odbhut lagtese ajkal. somossa kina jani na, ektu review kore den vai.",
+      "language": "mixed",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "bhai amar takar bepar ta thik bujhte partesi na. sob kichu ektu valo kore dekhben please?",
+      "language": "mixed",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "ekta general proshno, amar bkash e ki kono issue ache ja niye amar chinta kora uchit?",
+      "language": "mixed",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "amar mone hocche taka niye kothao ekta jhamela, but specific kore bolte partesi na. help koren.",
+      "language": "mixed",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "hello, amar account thikthak ache kina ektu nishchit hote chai. kichu ekta jeno thik nai mone hocche.",
+      "language": "mixed",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "amar takar byapare ektu kotha dorkar, bujhiye bola kothin. ektu phone diye dekhben bishoyta?",
+      "language": "mixed",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "amar recent transaction gulo ektu bujhiye diben? puro account niyei kemon jeno confused ase.",
+      "language": "mixed",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "vai kichu ekta ghotse amar account e mone hoy, kintu thik bolte partesi na ki. sobta ektu check kore den.",
+      "language": "mixed",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "amar money ta thik feel hocche na. balance off lagtese but ki vabe bujhte partesi na. ektu dekhen.",
+      "language": "mixed",
+      "expected_case_type": "other"
+    },
+    {
+      "complaint": "ami ektu worried amar account niye. ki hocche jani na but normal lagtese na. ektu bujhiye den please.",
+      "language": "mixed",
+      "expected_case_type": "other"
+    }
+  ]
+}

@@ -121,20 +121,21 @@ def build_signals(complaint: str, declared_language: str | None = None) -> Compl
         amounts=extract_amounts(text),
         counterparty_hints=extract_counterparty_hints(text),
         mentions_twice=bool(
-            re.search(r"\btwice\b|\btwo times\b|\bdouble\b|\bagain\b", lower)
+            re.search(r"\btwice\b|\btwo times\b|\bdouble\b|\bagain\b|dui ?bar|duibar|dubar", lower)
             or "দুইবার" in text or "ডবল" in text
         ),
         mentions_failed=bool(
-            re.search(r"\bfail(ed|ure)?\b|\bunsuccessful\b|\bdeclined\b", lower)
+            re.search(r"\bfail(ed|ure)?\b|\bunsuccessful\b|\bdeclined\b|\bfel\b", lower)
             or "ফেইল" in text or "ব্যর্থ" in text or "হয়নি" in text
         ),
         mentions_not_received=bool(
             re.search(r"\bnot (yet )?(received|reflect|credit|come|show|settl)", lower)
             or re.search(r"\bdidn'?t (get|receive)\b|\bhaven'?t (got|received)\b", lower)
+            or re.search(r"\b(pai|paini|pai ?ni|pai nai|ase ?nai|aseni|asy nai)\b", lower)
             or "আসেনি" in text or "পাইনি" in text or "দেখছি না" in text or "আসে নাই" in text
         ),
         mentions_reverse=bool(
-            re.search(r"\breverse\b|\brefund\b|\bget my money back\b|\breturn\b", lower)
+            re.search(r"\breverse\b|\brefund\b|\bget my money back\b|\breturn\b|ferot|ferat", lower)
             or "ফেরত" in text or "রিফান্ড" in text
         ),
     )
