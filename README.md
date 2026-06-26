@@ -33,7 +33,7 @@ GET  /health           →  {"status":"ok"}
 - **Scalable & reliable**: stateless, async FastAPI + gunicorn multi-worker, in-process LRU cache,
   tolerant input parsing (never crashes), benchmarked at **~2,800 req/s** (p50 ≈ 11 ms, p95 ≈ 20 ms) on a
   4-worker laptop — far inside the 30 s timeout / 5 s p95 targets.
-- **10/10 public sample cases** match the expected output on all six scored fields; **71 tests** pass.
+- **10/10 public sample cases** match the expected output on all six scored fields; **92 tests** pass.
 
 ---
 
@@ -227,7 +227,7 @@ package data. Runs comfortably within 2 vCPU / 4 GB.
 ## Testing
 
 ```bash
-python -m pytest          # 71 tests: 10 sample cases, safety red-team, API contract, unit logic
+python -m pytest          # 92 tests: 10 sample cases, safety red-team, API contract, multilingual corpus, unit logic
 ruff check src tests scripts
 ```
 

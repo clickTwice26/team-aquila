@@ -4,15 +4,16 @@
 
 ---
 
-**71 tests** gate the build: unit tests for the pure domain logic, a safety red-team, an API-contract
-suite, and functional-equivalence tests against all 10 public samples. The pure-domain design
+**92 tests** gate the build: unit tests for the pure domain logic, a safety red-team, an API-contract
+suite, functional-equivalence tests against all 10 public samples, and a 292-case multilingual
+corpus. The pure-domain design
 ([Ch. 02](../02-architecture/README.md)) means the tests exercise the **exact logic the judge scores**
 — no HTTP flakiness, no network.
 
 ```bash
 pip install -r requirements-dev.txt && pip install -e .
 python scripts/train_classifier.py
-pytest -q                       # 71 tests
+pytest -q                       # 92 tests
 ruff check src tests scripts
 ```
 
@@ -28,6 +29,7 @@ ruff check src tests scripts
 | Safety red-team | [`tests/unit/test_safety.py`](../../tests/unit/test_safety.py) | P1/P2/P3 detection, sanitization, reminder enforcement, injection |
 | API contract | [`tests/integration/test_api_contract.py`](../../tests/integration/test_api_contract.py) | status codes, schema, `ticket_id` echo, never-crash |
 | Sample equivalence | [`tests/integration/test_samples.py`](../../tests/integration/test_samples.py) | all 10 public cases on the six scored fields + safe reply |
+| Multilingual corpus | [`tests/integration/test_multilingual_corpus.py`](../../tests/integration/test_multilingual_corpus.py) | classifier accuracy + reply-language across a 292-case EN/BN/Banglish fixture |
 
 Shared fixtures (the `TestClient`, sample loading) live in
 [`tests/conftest.py`](../../tests/conftest.py).

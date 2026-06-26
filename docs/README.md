@@ -44,11 +44,14 @@ chapter with its own `README.md` and diagrams.
 | 10 | **[Text Generation](10-text-generation/README.md)** | Safe-by-construction multilingual replies | 🏃 Activity |
 | 11 | **[Reliability & Performance](11-reliability-and-performance/README.md)** | Never-crash, caching, latency budget | 🏃 Activity |
 | 12 | **[Deployment](12-deployment/README.md)** | Docker, gunicorn, hosting, runbook | 🔁 Sequence |
-| 13 | **[Testing & Validation](13-testing-and-validation/README.md)** | 71 tests, red-team, scoring | 🏃 Activity |
+| 13 | **[Testing & Validation](13-testing-and-validation/README.md)** | 92 tests, red-team, scoring | 🏃 Activity |
 | 14 | **[Decision Matrix Reference](14-decision-matrix/README.md)** | All 10 sample cases, field-by-field | tables |
 
 > 📁 **[`diagrams/`](diagrams/README.md)** collects the headline system-wide diagrams in one place
 > for quick reference and presentations.
+>
+> 🎬 **[`VIDEO-SCRIPT.md`](VIDEO-SCRIPT.md)** — a timed, copy-paste storyboard for recording the
+> optional 90-second architecture overview video straight from these docs.
 
 ---
 

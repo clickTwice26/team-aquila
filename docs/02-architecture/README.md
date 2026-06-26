@@ -97,7 +97,7 @@ src/queuestorm/
 ```
 
 > `domain/` and `domain/safety.py` have **zero web/ML dependencies** → independently unit-testable
-> and covered before deployment. **71 tests pass · 10/10 samples match · ~2,800 req/s, p95 ≈ 20 ms.**
+> and covered before deployment. **92 tests pass · 10/10 samples match · ~2,800 req/s, p95 ≈ 20 ms.**
 
 ---
 
@@ -132,7 +132,7 @@ flowchart LR
 ```
 
 **Why it matters for scoring:** because the core is decoupled from FastAPI and from any model, the
-**71 unit tests** exercise the exact logic the judge scores — no HTTP, no network, no flakiness.
+**92 tests** exercise the exact logic the judge scores — no HTTP, no network, no flakiness.
 
 ---
 
