@@ -37,6 +37,35 @@ GET  /health           →  {"status":"ok"}
 
 ---
 
+## 📚 Documentation
+
+Full architecture documentation — **14 chapters with 40+ Mermaid diagrams** (use-case, component,
+sequence, activity) — lives in **[`docs/`](docs/README.md)**. Start there for the complete walkthrough;
+every chapter traces its claims to the code and is verified against it.
+
+| Chapter | Topic |
+|---|---|
+| [01 · Overview & Mission](docs/01-overview/README.md) | The problem, the "investigator twist", actors, scoring map |
+| [02 · System Architecture](docs/02-architecture/README.md) | Layers, components, data flow, dependency rule, tech stack |
+| [03 · API Contract](docs/03-api-contract/README.md) | Endpoints, request/response schema, enums, status codes |
+| [04 · Investigation Pipeline](docs/04-investigation-pipeline/README.md) | The 8-stage orchestrator, ML gating, content cache |
+| [05 · Normalization & Signals](docs/05-normalization/README.md) | Amounts, language, counterparty, status cues (EN/BN/Banglish) |
+| [06 · Case-Type Classification](docs/06-classification/README.md) | Keyword rules, tie-break order, optional ML fallback |
+| [07 · Evidence Matching & Verdict](docs/07-evidence-matching/README.md) | `relevant_transaction_id` + `evidence_verdict` (the investigator's brain) |
+| [08 · Routing, Severity & Review](docs/08-routing-and-severity/README.md) | `department`, `severity`, `human_review_required` |
+| [09 · Safety System](docs/09-safety-system/README.md) | The output safety filter, P1/P2/P3, injection defense |
+| [10 · Text Generation](docs/10-text-generation/README.md) | Safe-by-construction multilingual replies |
+| [11 · Reliability & Performance](docs/11-reliability-and-performance/README.md) | Never-crash handling, caching, latency budget |
+| [12 · Deployment](docs/12-deployment/README.md) | Docker, gunicorn, hosting, cold-start, runbook |
+| [13 · Testing & Validation](docs/13-testing-and-validation/README.md) | 92 tests, safety red-team, classifier scoring |
+| [14 · Decision Matrix](docs/14-decision-matrix/README.md) | All 10 sample cases, field-by-field |
+
+**Also in [`docs/`](docs/README.md):** [`diagrams/`](docs/diagrams/README.md) (headline system diagrams) ·
+[`SLIDES.md`](docs/SLIDES.md) (4-slide presentation deck) ·
+[`VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md) (90-second architecture-video storyboard).
+
+---
+
 ## Tech stack
 
 | Layer | Choice |
@@ -73,8 +102,9 @@ src/queuestorm/            # installable package (src layout)
 │   └── investigator.py    #   pipeline orchestrator + LRU cache
 └── ml/                    # optional fallback classifier + artifacts/
 deploy/                    # Dockerfile, docker-compose.yml, gunicorn_conf.py
-scripts/                   # train_classifier.py, generate_sample_output.py, smoke.sh
-tests/                     # unit/ + integration/
+scripts/                   # train_classifier.py, generate_sample_output.py, score_cases.py, smoke.sh
+tests/                     # unit/ + integration/ (92 tests) + cases.json multilingual corpus
+docs/                      # full architecture documentation — 14 chapters + diagrams + slides + video script
 contexts/                  # hackathon reference docs (not part of the app)
 ```
 
